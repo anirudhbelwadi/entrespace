@@ -9,6 +9,40 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1 class="text-center">Investor</h1>
+    <form class="container w-50" name="investorForm" method="post">
+        <label for="name" class="h4">Name&nbsp;<span style="color: red;">*</span></label>
+        <input type="text" class="form-control" name="name" id="name" placeholder="Enter name" required>
+        <br>
+        <label for="email" class="h4">Email&nbsp;<span style="color: red;">*</span></label>
+        <input type="email" class="form-control" name="email" id="email" placeholder="Enter email" required>
+        <br>
+        <label for="phone" class="h4">Phone No.&nbsp;<span style="color: red;">*</span></label>
+        <input type="text" class="form-control" name="phone" id="phone" placeholder="Enter phone number" required>
+        <br>
+        <label for="occupation" class="h4">Occupation&nbsp;<span style="color: red;">*</span></label>
+        <input type="text" class="form-control" name="occupation" id="occupation" placeholder="Enter occupation" required>
+        <br>
+        <label for="amount" class="h4">Amount you are willing to invest&nbsp;<span style="color: red;">*</span></label>
+        <input type="number" min="1" class="form-control" name="amount" id="amount" placeholder="Enter amount" required>
+        <br>
+        <label for="cetegory" class="h4">Any specific category you want to invest in?</label>
+        <input type="text" class="form-control" name="category" id="category" placeholder="Enter category">
+        <br>
+        <!--<label for="cv" class="h4" class="form-label">Upload your CV&nbsp;<span style="color: red;">*</span></label>
+        <input class="form-control" type="file" id="cv" name="cv" required>-->
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxfNWIqwNpI0OAe4i_0CPleybdfatMVXc2ixLyKW6uTr89dnqBVnE5kng/exec'
+        const form = document.forms['investorForm']
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => alert("Thank you for showing your interest in investing! You will be contacted soon by our team."))
+                .catch(error => console.error(error.message))
+            document.getElementById("investorForm").reset();
+        });
+    </script>
 </body>
 </html>
