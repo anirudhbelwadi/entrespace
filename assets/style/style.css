@@ -1,0 +1,726 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fenix&display=swap');
+/* Nav Section */
+.nav{
+    background-color: white !important;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    height: 72px;
+}
+.nav_logo{
+    position: absolute;
+    width: 37px;
+    left: 27px;
+    top: 16px;
+}
+.nav_logo_name{
+    position: absolute;
+    text-decoration: none;
+    top: 24px;
+    left: 72px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    color: #1175BC;
+}
+.nav_links{
+    position: absolute;
+    right: 0;
+    top: 25px;
+    display: flex;
+    flex-direction: row;
+}
+.nav_links a{
+    text-decoration: none;
+    color: black;
+    width: max-content;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    margin-right: 73px;
+}
+.nav_link_get_started{
+    font-weight: 800 !important;
+    color: #1175BC !important;
+}
+/* Main Section */
+.main{
+    height: 100vh;
+    background: url(../img/main_back.jpg);
+    background-repeat: no-repeat;
+    background-position: 0px 72px;
+    background-attachment: fixed;
+    overflow: hidden;
+    position: relative;
+}
+.main_large_circle_white{
+    position: absolute;
+    width: 799px;
+    height: 799px;
+    left: -83px;
+    bottom: -172px;
+    background-color: #F7F7F7;;
+    border-radius: 50%;
+}
+.main_small_circle_white{
+    position: absolute;
+    width: 262px;
+    height: 258px;
+    left: 1148px;
+    top: 552px;
+    background: #F6F6F6;
+    border-radius: 50%;
+}
+.main_company_name{
+    position: absolute;
+    left: 72px;
+    top: 360px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 56px;
+    color: #1175BC;
+}
+.main_tagline{
+    position: absolute;
+    left: 72px;
+    top: 429px;
+    width: 486px;
+    font-family: Fenix;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 54px;
+    color: #F36E33;
+}
+.main_get_started{
+    position: absolute;
+    width: 194px;
+    height: 54px;
+    left: 72px;
+    top: 564px;
+    background: #FFCF06;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 16px;
+    text-decoration: none;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #2A3990;
+}
+.main_logo{
+    position: absolute;
+    width: 278.13px;
+    height: 276px;
+    left: calc(100vw/2 - 138px);
+    top: calc(100vh - 138px);
+}
+/* About Section */
+.about{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+.about_logo{
+    position: absolute;
+    left: calc(100vw/2 - 138px);
+    width: 278.13px;
+    height: 276px;
+    top: -138px;
+}
+.about_large_circle_orange{
+    position: absolute;
+    height: 799px;
+    width: 799px;
+    background-color: #F36E33;
+    border-radius: 50%;
+    left: -81px;
+    top: -625px;
+}
+.about_small_circle_ornage{
+    position: absolute;
+    width: 262px;
+    height: 258px;
+    left: 1149px;
+    top: -166px;
+    background: rgba(243, 110, 51, 0.8);
+    border-radius: 50%;
+}
+.about_large_circle_yellow{
+    position: absolute;
+    width: 578px;
+    height: 578px;
+    left: 995px;
+    top: 476px;
+    background: rgba(255, 207, 6, 0.75);
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+.about_question{
+    position: absolute;
+    width: 264px;
+    height: 56px;
+    left: 638px;
+    top: 190px;
+    font-family: Fenix;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 40px;
+    color: #1175BC;
+}
+.about_write_up{
+    position: absolute;
+    width: 392px;
+    height: 288px;
+    left: 638px;
+    top: 246px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.04em;
+    font-feature-settings: 'liga' off;
+    color: #000000;
+}
+.about_mission{
+    position: absolute;
+    width: 264px;
+    height: 56px;
+    left: 129px;
+    top: 448px;
+    font-family: Fenix;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 40px;
+    color: #1175BC;
+}
+.about_mission_write_up{
+    position: absolute;
+    width: 338px;
+    height: 128px;
+    left: 129px;
+    top: 504px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.04em;
+    font-feature-settings: 'liga' off;
+    color: #000000;
+}
+/* Value Section */
+.value{
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.value_large_circle_yellow{
+    position: absolute;
+    width: 578px;
+    height: 578px;
+    left: 996px;
+    top: -244px;
+    background: rgba(255, 207, 6, 0.75);
+    border-radius: 50%;
+}
+.value_small_circle_blue{
+    position: absolute;
+    width: 435px;
+    height: 435px;
+    left: -286px;
+    top: 465px;
+    background: rgba(17, 117, 188, 0.8);
+    border-radius: 50%;
+}
+.value_heading{
+    position: absolute;
+    width: 264px;
+    height: 56px;
+    left: 129px;
+    top: 58px;
+    font-family: Fenix;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 40px;
+    color: #1175BC;
+}
+.value_leadership{
+    position: absolute;
+    width: 207px;
+    height: 56px;
+    left: 127px;
+    top: 140px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #F36E33;
+}
+.value_passion{
+    position: absolute;
+    width: 147px;
+    height: 56px;
+    left: 450px;
+    top: 140px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #F36E33;
+}
+.value_integrity{
+    position: absolute;
+    width: 179px;
+    height: 56px;
+    left: 713px;
+    top: 140px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #F36E33;
+    
+}
+.value_services{
+    position: absolute;
+    width: 956.23px;
+    height: 194px;
+    top: 464px;
+    left: 196px;
+}
+/* Approach Section */
+.approach{
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.approach_small_circle_blue{
+    position: absolute;
+    width: 435px;
+    height: 435px;
+    left: -286px;
+    top: -255px;
+    border-radius: 50%;
+    background: rgba(17, 117, 188, 0.8);
+}
+.approach_process{
+    position: absolute;
+    width: 1014.63px;
+    height: 406px;
+    left: 121px;
+    top: 193px;
+}
+/* Achievements Section */
+.achievements{
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.achievements_large_circle_blue{
+    position: absolute;
+    width: 552px;
+    height: 552px;
+    left: 1052px;
+    top: 501px;
+    border-radius: 50%;
+    background: rgba(17, 117, 188, 0.8);
+}
+.achievements_clients{
+    position: absolute;
+    width: 145px;
+    height: 48px;
+    left: 88px;
+    top: 240px;
+    font-family: Fenix;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 30px;
+    color: #1175BC;
+}
+.achievements_clients_circle{
+    position: absolute;
+    width: 117px;
+    height: 116px;
+    left: 98px;
+    top: 307px;
+    border-radius: 50%;
+    background: rgba(255, 207, 6, 0.57);
+    text-align: center;
+    padding-top: 34px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    color: #1175BC;
+}
+.achievements_projects{
+    position: absolute;
+    width: 248px;
+    height: 48px;
+    left: 341px;
+    top: 240px;
+    font-family: Fenix;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 30px;
+    color: #1175BC;
+}
+.achievements_projects_circle{
+    position: absolute;
+    width: 117px;
+    height: 116px;
+    left: 396px;
+    top: 307px;
+    border-radius: 50%;
+    background: rgba(255, 207, 6, 0.57);
+    text-align: center;
+    padding-top: 34px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    color: #1175BC;
+}
+.achievements_startup{
+    position: absolute;
+    width: 264px;
+    height: 48px;
+    left: 673px;
+    top: 240px;
+    font-family: Fenix;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 30px;
+    color: #1175BC;
+}
+.achievements_startup_circle{
+    position: absolute;
+    width: 117px;
+    height: 116px;
+    left: 707px;
+    top: 307px;
+    border-radius: 50%;
+    background: rgba(255, 207, 6, 0.57);
+    text-align: center;
+    padding-top: 34px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    color: #1175BC;
+}
+.achievements_social_media{
+    position: absolute;
+    width: 261px;
+    height: 62px;
+    left: 933px;
+    top: 240px;
+    font-family: Fenix;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 30px;
+    color: #1175BC;
+}
+.achievements_social_media_circle{
+    position: absolute;
+    width: 118px;
+    height: 116px;
+    left: 1003px;
+    top: 302px;
+    border-radius: 50%;
+    background: rgba(255, 207, 6, 0.57);
+    text-align: center;
+    padding-top: 34px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    color: #1175BC;
+}
+/* Contact Section */
+.contact{
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.contact_large_circle_blue{
+    position: absolute;
+    width: 552px;
+    height: 552px;
+    left: 1052px;
+    top: -216px;
+    border-radius: 50%;
+    background: rgba(17, 117, 188, 0.8);
+}
+.contact_small_circle_ornage{
+    position: absolute;
+    width: 533px;
+    height: 533px;
+    left: -285px;
+    top: 343px;
+    border-radius: 50%;
+    background: rgba(243, 110, 51, 0.8);
+}
+.contact_get_in_touch{
+    position: absolute;
+    width: 249px;
+    height: 61px;
+    left: 516px;
+    top: 58px;
+    font-family: Fenix;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 54px;
+    color: #1175BC;
+}
+.contact_mail_icon{
+    position: absolute;
+    width: 64.53px;
+    height: 62px;
+    left: 608px;
+    top: 115px;
+}
+.contact_mail{
+    position: absolute;
+    width: 269px;
+    height: 28px;
+    left: 533px;
+    top: 188px;
+    text-decoration: none;
+    font-family: Fenix;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 20px;
+    color: #1175BC;
+}
+.contact_text{
+    position: absolute;
+    width: 357px;
+    height: 75px;
+    left: 468px;
+    top: 225px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #000000;
+}
+.contact_name_label{
+    position: absolute;
+    width: 85px;
+    height: 38px;
+    left: 463px;
+    top: 310px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #1175BC;
+}
+.contact_name_input{
+    position: absolute;
+    width: 356px;
+    height: 36px;
+    left: 463px;
+    top: 336px;
+    background: #E2DFDF;
+    border-radius: 9px;
+    border: none;
+    outline: none;
+}
+.contact_email_label{
+    position: absolute;
+    width: 85px;
+    height: 38px;
+    left: 464px;
+    top: 397px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #1175BC;
+}
+.contact_email_input{
+    position: absolute;
+    width: 356px;
+    height: 36px;
+    left: 464px;
+    top: 423px;
+    background: #E2DFDF;
+    border-radius: 9px;
+    border: none;
+    outline: none;
+}
+.contact_message_label{
+    position: absolute;
+    width: 141px;
+    height: 38px;
+    left: 463px;
+    top: 490px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+}
+.contact_message_input{
+    position: absolute;
+    width: 356px;
+    height: 145px;
+    left: 463px;
+    top: 516px;
+    background: #E2DFDF;
+    border-radius: 9px;
+    border: none;
+    outline: none;
+}
+/* Footer Section */
+.footer{
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.footer_small_circle_ornage{
+    position: absolute;
+    width: 533px;
+    height: 533px;
+    left: -285px;
+    top: -377px;
+    border-radius: 50%;
+    background: rgba(243, 110, 51, 0.8);
+}
+.footer_bottom_footer{
+    position: absolute;
+    width: 1280px;
+    height: 395px;
+    left: 0px;
+    top: 325px;
+    background: rgba(255, 207, 6, 0.06);
+}
+.footer_logo{
+    position: absolute;
+    width: 94.73px;
+    height: 94px;
+    margin-left: 102px;
+    margin-top: 360px;
+}
+.footer_company_name{
+    position: absolute;
+    width: 211px;
+    height: 35px;
+    left: 212px;
+    top: calc(50% - 35px/2 + 46.5px);
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 42px;
+    color: #1175BC;
+}
+.footer_copyright1{
+    position: absolute;
+    width: 417px;
+    height: 32px;
+    left: 106px;
+    top: 484px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+}
+.footer_copyright2{
+    position: absolute;
+    width: 417px;
+    height: 32px;
+    left: 106px;
+    top: 516px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+}
+.footer_social_media_linkedin{
+    position: absolute;
+    width: 49px;
+    height: 49px;
+    left: 1018px;
+    top: 382px;
+}
+.footer_social_media_instagram{
+    position: absolute;
+    width: 49px;
+    height: 49px;
+    left: 1094px;
+    top: 382px;
+}
+.footer_email{
+    position: absolute;
+    width: 255px;
+    height: 28px;
+    left: 898px;
+    top: 456px;
+    font-family: Fenix;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 22px; 
+    color: #1175BC;
+    text-decoration: none;
+}
+.footer_privacy_policy{
+    position: absolute;
+    width: 516px;
+    height: 32px;
+    left: 382px;
+    top: 640px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #000000;
+}
