@@ -82,14 +82,7 @@
     visibility: hidden;
 }
 .nav_about_dropdown_mobile{
-    visibility: visible;
-    position: absolute;
-    height: 220px;
-    width: 100%;
-    right: 0px;
-    top: 72px;
-    transition: 0.5s;
-    text-align: center;
+    visibility: hidden;
 }
 @media screen and (max-width: 800px) {
     .nav_links{
@@ -101,6 +94,16 @@
         right: 22px;
         fill: #1175BC;
         visibility: visible;
+    }
+    .nav_about_dropdown_mobile{
+        visibility: visible;
+        position: absolute;
+        height: 220px;
+        width: 100%;
+        right: 0px;
+        top: 72px;
+        transition: 0.5s;
+        text-align: center;
     }
 }
 /* Main Section */
