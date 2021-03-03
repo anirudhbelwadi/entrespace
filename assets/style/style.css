@@ -48,6 +48,36 @@
     font-weight: 800 !important;
     color: #1175BC !important;
 }
+.nav_about_dropdown{
+    position: absolute;
+    width: 166px;
+    height: 220px;
+    right: 432px;
+    top: 72px;
+    background: #1175BC;
+    border-radius: 0px 0px 20px 20px;
+    list-style: none;
+    padding-top: 11px;
+    padding-left: 0px;
+    visibility: hidden;
+}
+.nav_about_dropdown_visible{
+    visibility: visible;
+}
+.nav_about_dropdown li{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    padding: 8px 0px 8px 13px;
+}
+.nav_about_dropdown li:hover{
+    background: #FFFFFF;
+    cursor: pointer;
+    color: #1175BC;
+}
 /* Main Section */
 .main{
     height: 100vh;
@@ -306,6 +336,19 @@
     color: #F36E33;
     
 }
+.value_services_heading{
+    position: absolute;
+    width: 264px;
+    height: 56px;
+    left: 194px;
+    top: 360px;
+    font-family: Fenix;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 40px;
+    color: #1175BC;
+}
 .value_services{
     position: absolute;
     width: 956.23px;
@@ -327,6 +370,19 @@
     top: -255px;
     border-radius: 50%;
     background: rgba(17, 117, 188, 0.8);
+}
+.approach_heading{
+    position: absolute;
+    width: 289px;
+    height: 56px;
+    left: 877px;
+    top: 81px;
+    font-family: Fenix;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 45px;
+    color: #1175BC;
 }
 .approach_process{
     position: absolute;
@@ -565,6 +621,8 @@
     border-radius: 9px;
     border: none;
     outline: none;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .contact_email_label{
     position: absolute;
@@ -589,6 +647,8 @@
     border-radius: 9px;
     border: none;
     outline: none;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .contact_message_label{
     position: absolute;
@@ -601,6 +661,7 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 21px;
+    color: #1175BC;
 }
 .contact_message_input{
     position: absolute;
@@ -612,6 +673,7 @@
     border-radius: 9px;
     border: none;
     outline: none;
+    padding: 10px 10px;
 }
 /* Footer Section */
 .footer{
