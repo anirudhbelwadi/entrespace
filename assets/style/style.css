@@ -94,6 +94,7 @@
         right: 22px;
         fill: #1175BC;
         visibility: visible;
+        cursor: pointer;
     }
     .nav_about_dropdown_mobile{
         visibility: visible;
@@ -386,7 +387,7 @@
     position: absolute;
     width: 264px;
     height: 56px;
-    left: 638px;
+    right: 378px;
     top: 190px;
     font-family: Fenix;
     font-style: normal;
@@ -399,7 +400,7 @@
     position: absolute;
     width: 392px;
     height: 288px;
-    left: 638px;
+    right: 250px;
     top: 246px;
     font-family: Raleway;
     font-style: normal;
@@ -438,12 +439,148 @@
     font-feature-settings: 'liga' off;
     color: #000000;
 }
+@media screen and (max-width: 774px){
+    .about_large_circle_yellow{
+        width: 275px;
+        height: 275px;
+        right: -170px;
+        bottom: -108px;
+    }
+    .about_question{
+        position: absolute;
+        width: 264px;
+        height: 56px;
+        left: 35px;
+        top: 173px;
+        font-family: Fenix;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 34px;
+        color: #1175BC;
+
+    }
+    .about_write_up{
+        position: absolute;
+        width: 310px;
+        height: 288px;
+        left: 35px;
+        top: 224px;
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 125.9%;
+        letter-spacing: 0.04em;
+        font-feature-settings: 'liga' off;
+        color: #000000;
+    }
+    .about_mission{
+        position: absolute;
+        width: 264px;
+        height: 56px;
+        left: 35px;
+        top: 452px;
+        font-family: Fenix;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 34px;
+        color: #1175BC;
+    }
+    .about_mission_write_up{
+        position: absolute;
+        width: 293px;
+        height: 128px;
+        left: 35px;
+        top: 505px;
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 125.9%;
+        letter-spacing: 0.04em;
+        font-feature-settings: 'liga' off;
+        color: #000000;
+    }
+}
 @media screen and (max-width: 800px){
     .about_large_circle_orange{
         left: -150px;
+        height: 770px;
+        width: 770px;
+        top: -598px;
     }
     .about_small_circle_ornage{
         display: none;
+    }
+}
+@media screen and (max-width: 700px){
+    .about_logo{
+        left: calc(100vw/2 - 130px);
+        width: 260px;
+        height: auto;
+        top: -130px;
+    }
+    .about_large_circle_orange{
+        left: -200px;
+        height: 740px;
+        width: 740px;
+        top: -568px;
+    }
+}
+@media screen and (max-width: 600px){
+    .about_logo{
+        width: 250px;
+        height: auto;
+        left: calc(100vw/2 - 125px);
+        top: -125px;
+    }
+    .about_large_circle_orange{
+        left: -250px;
+        height: 710px;
+        width: 710px;
+        top: -542px;
+    }
+}
+@media screen and (max-width: 500px){
+    .about_large_circle_orange{
+        left: -300px;
+        height: 680px;
+        width: 680px;
+        top: -510px;
+    }
+    .about_logo{
+        width: 230px;
+        height: auto;
+        left: calc(100vw/2 - 115px);
+        top: -115px;
+    }
+}
+@media screen and (max-width: 400px){
+    .about_large_circle_yellow{
+        right: -220px;
+    }
+    .about_question{
+        left: 20px;
+    }
+    .about_write_up{
+        left: 20px;
+    }
+    .about_mission{
+        top: 400px;
+        left: 20px;
+    }
+    .about_mission_write_up{
+        top: 453px;
+        left: 20px;
+    }
+}
+@media screen and (max-width: 350px){
+    .about_mission_write_up{
+        top: 448px;
+        left: 20px;
+        width: 245px;
     }
 }
 /* Value Section */
@@ -549,6 +686,19 @@
     height: 194px;
     top: 464px;
     left: 196px;
+}
+@media screen and (max-width: 774px){
+    .value_large_circle_yellow{
+        width: 275px;
+        height: 275px;
+        right: -170px;
+        top: -167px;        
+    }
+}
+@media screen and (max-width: 400px){
+    .value_large_circle_yellow{
+        right: -220px;       
+    }
 }
 /* Approach Section */
 .approach{
