@@ -687,12 +687,102 @@
     top: 464px;
     left: 196px;
 }
+@media screen and (max-width: 1170px){
+    .value_leadership{
+        left: 129px;
+    }
+    .value_passion{
+        left: 400px;        
+    }
+    .value_integrity{
+        left: 603px;           
+    }
+}
+@media screen and (max-width: 1170px){
+    .value_heading{
+        left: 100px;
+    }
+    .value_leadership{
+        left: 100px;
+    }
+    .value_passion{
+        left: 345px;        
+    }
+    .value_integrity{
+        left: 520px;           
+    }
+}
+@media screen and (max-width: 970px){
+    .value_heading{
+        left: 60px;
+    }
+    .value_leadership{
+        left: 60px;
+    }
+    .value_passion{
+        left: 300px;        
+    }
+    .value_integrity{
+        left: 480px;           
+    }
+}
+@media screen and (max-width: 932px){
+    .value_heading{
+        left: 37px;
+        top: 57px;
+    }
+    .value_leadership{
+        left: 37px;
+        top: 139px;
+    }
+    .value_passion{
+        left: 37px;
+        top: 213px;        
+    }
+    .value_integrity{
+        left: 37px;
+        top: 287px;           
+    }
+}
 @media screen and (max-width: 774px){
     .value_large_circle_yellow{
         width: 275px;
         height: 275px;
         right: -170px;
         top: -167px;        
+    }
+    .value_heading{
+        left: 60px;
+    }
+    .value_leadership{
+        left: 60px;
+        top: 140px;
+    }
+    .value_passion{
+        left: 300px;
+        top: 140px;        
+    }
+    .value_integrity{
+        left: 480px;
+        top: 140px;           
+    }
+}
+@media screen and (max-width: 680px){
+    .value_heading{
+        left: 37px;
+        top: 57px;
+    }
+    .value_leadership{
+        left: 37px;
+        top: 139px;
+    }
+    .value_passion{
+        left: 37px;
+        top: 213px;        
+    }
+    .value_integrity{
+        left: 37px;
+        top: 287px;           
     }
 }
 @media screen and (max-width: 400px){
