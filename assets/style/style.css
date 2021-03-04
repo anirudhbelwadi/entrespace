@@ -672,7 +672,7 @@
     width: 264px;
     height: 56px;
     left: 194px;
-    top: 360px;
+    bottom: 304px;
     font-family: Fenix;
     font-style: normal;
     font-weight: normal;
@@ -684,7 +684,7 @@
     position: absolute;
     width: 956.23px;
     height: 194px;
-    top: 464px;
+    bottom: 62px;
     left: 196px;
 }
 @media screen and (max-width: 1170px){
@@ -697,8 +697,13 @@
     .value_integrity{
         left: 603px;           
     }
+    .value_services{
+        width: 850px;
+        height: auto;
+        bottom: 100px;
+    }
 }
-@media screen and (max-width: 1170px){
+@media screen and (max-width: 1070px){
     .value_heading{
         left: 100px;
     }
@@ -710,6 +715,11 @@
     }
     .value_integrity{
         left: 520px;           
+    }
+    .value_services{
+        width: 750px;
+        height: auto;
+        bottom: 140px;
     }
 }
 @media screen and (max-width: 970px){
@@ -725,23 +735,35 @@
     .value_integrity{
         left: 480px;           
     }
+    .value_services_heading{
+        left: 144px;
+    }
+    .value_services{
+        left: 144px;
+    }
 }
 @media screen and (max-width: 932px){
     .value_heading{
-        left: 37px;
+        left: 125px;
         top: 57px;
     }
     .value_leadership{
-        left: 37px;
+        left: 125px;
         top: 139px;
     }
     .value_passion{
-        left: 37px;
+        left: 125px;
         top: 213px;        
     }
     .value_integrity{
-        left: 37px;
+        left: 125px;
         top: 287px;           
+    }
+    .value_services_heading{
+        display: none;
+    }
+    .value_services{
+        display: none;
     }
 }
 @media screen and (max-width: 774px){
