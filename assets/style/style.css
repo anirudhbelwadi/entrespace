@@ -110,7 +110,7 @@
 /* Main Section */
 .main{
     height: 100vh;
-    background: url(../img/main_back.jpg);
+    background: url("../img/main section/main_back.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -760,9 +760,15 @@
         top: 287px;           
     }
     .value_services_heading{
-        display: none;
+        left: 200px;
+        bottom: 0;
     }
     .value_services{
+        display: none;
+    }
+}
+@media screen and (max-width: 800px){
+    .value_services_heading{
         display: none;
     }
 }
@@ -847,6 +853,337 @@
     height: 406px;
     left: 121px;
     top: 193px;
+}
+.approach_services_three{
+    position: absolute;
+    display: none;
+}
+.approach_services_two{
+    position: absolute;
+    display: none;
+}
+.approach_services_heading{
+    position: absolute;
+    display: none;
+    width: 264px;
+    height: 56px;
+    font-family: Fenix;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 40px;
+    color: #1175BC;
+}
+@media screen and (max-width: 932px){
+    .approach_heading{
+        display: none;
+    }
+    .approach_process{
+        display: none;
+    }
+    .approach_services_three{
+        display: inherit;
+        height: 200px;
+        width: auto;
+        left: 200px;
+    }
+    .approach_services_two{
+        display: inherit;
+        width: auto;
+        top: 250px;
+        height: 200px;
+        left: 300px;
+    }
+}
+@media screen and (max-width: 800px){
+    .approach_services_three{
+        height: 170px;
+        width: auto;
+        top: 100px;
+        left: 150px;
+    }
+    .approach_services_two{
+        height: 170px;
+        width: auto;
+        top: 350px;
+        left: 240px;
+    }
+    .approach_services_heading{
+        display: inherit;
+        left: 150px;
+        top: 40px;
+    }
+}
+@media screen and (max-width: 700px){
+    .approach_services_three{
+        width: 470px;
+        height: auto;
+        left: 100px;
+        top: 223px;
+    }
+    .approach_services_two{
+        width: auto;
+        height: 163px;
+        left: 180px;
+        top: 404px;
+    }
+    .approach_services_heading{
+        display: inherit;
+        left: 100px;
+        top: 163px;
+    }
+    @media screen and (max-height: 570px) {
+        .approach_services_three{
+            top: 160px;
+        }
+        .approach_services_two{
+            top: 331px;
+        }
+        .approach_services_heading{
+            display: inherit;
+            top: 100px;
+        }
+    }
+    @media screen and (max-height: 500px) {
+        .approach_services_three{
+            top: 150px;
+            width: 380px;
+            height: auto;
+        }
+        .approach_services_two{
+            top: 300px;
+            width: auto;
+            height: 131px;
+        }
+        .approach_services_heading{
+            display: inherit;
+            font-size: 30px;
+            top: 100px;
+        }
+    }
+    @media screen and (max-height: 435px) {
+        .approach_services_three{
+            top: 150px;
+            width: 280px;
+            height: auto;
+        }
+        .approach_services_two{
+            top: 150px;
+            width: auto;
+            height: 97px;
+            left: 395px;
+        }
+        .approach_services_heading{
+            display: inherit;
+            font-size: 25px;
+            top: 100px;
+        }
+    }
+}
+@media screen and (max-width: 600px){
+    .approach_services_three{
+        width: 450px;
+        height: auto;
+        left: 48px;
+        top: 223px;
+    }
+    .approach_services_two{
+        width: auto;
+        height: 156px;
+        left: 130px;
+        top: 404px;
+    }
+    .approach_services_heading{
+        display: inherit;
+        left: 48px;
+        top: 163px;
+    }
+    @media screen and (max-height: 570px) {
+        .approach_services_three{
+            top: 200px;
+            height: 130px;
+            width: auto;
+        }
+        .approach_services_two{
+            top: 341px;
+            left: 110px;
+            height: 130px;
+            width: auto;
+        }
+        .approach_services_heading{
+            display: inherit;
+            top: 140px;
+        }
+    }
+    @media screen and (max-height: 475px) {
+        .approach_services_three{
+            top: 150px;
+            width: 330px;
+            height: auto;
+            left: 90px;
+        }
+        .approach_services_two{
+            top: 280px;
+            width: auto;
+            height: 114px;
+            left: 145px;
+        }
+        .approach_services_heading{
+            display: inherit;
+            font-size: 30px;
+            top: 100px;
+            left: 90px;
+        }
+    }
+    @media screen and (max-height: 435px) {
+        .approach_services_three{
+            top: 150px;
+            width: 280px;
+            height: auto;
+        }
+        .approach_services_two{
+            top: 150px;
+            width: auto;
+            height: 97px;
+            left: 395px;
+        }
+        .approach_services_heading{
+            display: inherit;
+            font-size: 25px;
+            top: 100px;
+        }
+    }
+}
+@media screen and (max-width: 500px){
+    .approach_services_three{
+        width: 339px;
+        height: auto;
+        left: 48px;
+        top: 293px;
+    }
+    .approach_services_two{
+        width: 220px;
+        height: auto;
+        left: 107px;
+        top: 444px;
+    }
+    .approach_services_heading{
+        display: inherit;
+        left: 48px;
+        top: 233px;
+    }
+    @media screen and (max-height: 570px) {
+        .approach_services_three{
+            top: 180px;
+            left: 70px;
+            height: 110px;
+            width: auto;
+        }
+        .approach_services_two{
+            top: 305px;
+            left: 120px;
+            height: 110px;
+            width: auto;
+        }
+        .approach_services_heading{
+            display: inherit;
+            top: 130px;
+            left: 70px;
+        }
+    }
+    @media screen and (max-height: 500px) {
+        .approach_services_heading{
+            font-size: 36px;
+        }  
+    }
+    @media screen and (max-height: 425px) {
+        .approach_services_three{
+            top: 170px;
+            left: 70px;
+            height: 90px;
+            width: auto;
+        }
+        .approach_services_two{
+            top: 270px;
+            left: 115px;
+            height: 90px;
+            width: auto;
+        }
+        .approach_services_heading{
+            font-size: 25px;
+        }
+    }
+}
+@media screen and (max-width: 400px){
+    .approach_services_three{
+        width: 339px;
+        height: auto;
+        left: 20px;
+        top: 293px;
+    }
+    .approach_services_two{
+        width: 220px;
+        height: auto;
+        left: 80px;
+        top: 444px;
+    }
+    .approach_services_heading{
+        display: inherit;
+        left: 20px;
+        top: 233px;
+    }
+    @media screen and (max-height: 540px) {
+        .approach_services_three{
+            top: 180px;
+            left: 60px;
+            height: 105px;
+            width: auto;
+        }
+        .approach_services_two{
+            top: 305px;
+            left: 120px;
+            height: 110px;
+            width: auto;
+        }
+        .approach_services_heading{
+            display: inherit;
+            top: 140px;
+            left: 60px;
+        }
+    }
+}
+@media screen and (max-width: 370px){
+    .approach_services_three{
+        width: 300px;
+        height: auto;
+        left: 20px;
+        top: 293px;
+    }
+    .approach_services_two{
+        width: auto;
+        height: 104px;
+        left: 70px;
+        top: 444px;
+    }
+}
+@media screen and (max-width: 325px){
+    .approach_services_three{
+        width: 260px;
+        height: auto;
+        left: 10px;
+        top: 293px;
+    }
+    .approach_services_two{
+        width: auto;
+        height: 90px;
+        left: 55px;
+        top: 444px;
+    }
+    .approach_services_heading{
+        display: inherit;
+        left: 10px;
+        top: 233px;
+    }
 }
 /* Achievements Section */
 .achievements{
