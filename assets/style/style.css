@@ -1627,6 +1627,14 @@
         left: 280px;
         top: 128px;
     }
+    @media screen and (max-height: 710px){
+        .achievements_large_circle_blue{
+            width: 300px;
+            height: 300px;
+            right: -230px;
+            bottom: -200px;
+        }
+    }
     @media screen and (max-height: 620px){
         .achievements_process{
             width: 268px;
@@ -2000,6 +2008,30 @@
     line-height: 15px;
     color: #FFFFFF;
 }
+.contact_clients{
+    display: none;
+}
+.contact_clients_circle{
+    display: none;
+}
+.contact_projects{
+    display: none;
+}
+.contact_projects_circle{
+    display: none;
+}
+.contact_startup{
+    display: none;
+}
+.contact_startup_circle{
+    display: none;
+}
+.contact_social_media{
+    display: none;
+}
+.contact_social_media_circle{
+    display: none;
+}
 @media screen and (max-width: 1200px){
     @media screen and (max-height: 600px){
         .contact_small_circle_ornage{
@@ -2016,6 +2048,219 @@
         }
     }
 }
+@media screen and (max-width: 932px){
+    .contact_get_in_touch{
+        display: none;
+    }
+    .contact_mail_icon{
+        display: none;
+    }
+    .contact_mail{
+        display: none;
+    }
+    .contact_text{
+        display: none;
+    }
+    .contact_name_label{
+        display: none;
+    }
+    .contact_name_input{
+        display: none;
+    }
+    .contact_email_label{
+        display: none;
+    }
+    .contact_email_input{
+        display: none;
+    }
+    .contact_message_label{
+        display: none;
+    }
+    .contact_message_input{
+        display: none;
+    }
+    .contact_submit_form{
+        display: none;
+    }
+    .contact_clients{
+        position: absolute;
+        left: 67px;
+        top: 40px;
+        font-family: Fenix;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 16px;
+        color: #1175BC;
+        display: inherit;
+    }
+    .contact_clients_circle{
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        left: 90px;
+        top: 80px;
+        background: rgba(255, 207, 6, 0.57);
+        border-radius: 50%;
+        display: inherit;
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 28px;
+        color: #1175BC;
+        text-align: center;
+        padding-top: 34px;
+    }
+    .contact_projects{
+        position: absolute;
+        left: 280px;
+        top: 40px;
+        font-family: Fenix;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 16px;
+        color: #1175BC;
+        display: inherit;
+    }
+    .contact_projects_circle{
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        left: 340px;
+        top: 80px;
+        background: rgba(255, 207, 6, 0.57);
+        border-radius: 50%;
+        display: inherit;
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 28px;
+        color: #1175BC;
+        text-align: center;
+        padding-top: 34px;
+    }
+    .contact_startup{
+        position: absolute;
+        left: 45px;
+        top: 230px;
+        font-family: Fenix;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 16px;
+        color: #1175BC;
+        display: inherit;
+    }
+    .contact_startup_circle{
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        left: 90px;
+        top: 273px;
+        background: rgba(255, 207, 6, 0.57);
+        border-radius: 50%;
+        display: inherit;
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 28px;
+        color: #1175BC;
+        text-align: center;
+        padding-top: 34px;
+    }
+    .contact_social_media{
+        position: absolute;
+        left: 260px;
+        top: 230px;
+        font-family: Fenix;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 16px;
+        color: #1175BC;
+        display: inherit;
+    }
+    .contact_social_media_circle{
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        left: 340px;
+        top: 273px;
+        background: rgba(255, 207, 6, 0.57);
+        border-radius: 50%;
+        display: inherit;
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 28px;
+        color: #1175BC;
+        text-align: center;
+        padding-top: 34px;
+    }
+    @media screen and (max-height: 710px){
+        .contact_small_circle_ornage{
+            width: 300px;
+            height: 300px;
+            left: -200px;
+            bottom: -156px;
+        }
+        .contact_large_circle_blue{
+            width: 300px;
+            height: 300px;
+            right: -230px;
+            top: -100px;
+        }
+        .contact_clients{
+            left: 40px;
+            font-size: 25px;
+        }
+        .contact_clients_circle{
+            width: 100px;
+            height: 100px;
+            left: 45px;
+            top: 80px;
+        }
+        .contact_projects{
+            left: 180px;
+            top: 40px;
+            font-size: 25px;
+        }
+        .contact_projects_circle{
+            width: 100px;
+            height: 100px;
+            left: 230px;
+            top: 80px;
+        }
+        .contact_startup{
+            left: 410px;
+            top: 40px;
+            font-size: 25px;
+        }
+        .contact_startup_circle{
+            width: 100px;
+            height: 100px;
+            left: 445px;
+            top: 80px;
+        }
+        .contact_social_media{
+            left: 610px;
+            width: fit-content;
+            top: 40px;
+            font-size: 25px;
+        }
+        .contact_social_media_circle{
+            width: 100px;
+            height: 100px;
+            left: 680px;
+            top: 80px;
+        }
+    }
+}
 @media screen and (max-width: 774px){
     .contact_large_circle_blue{
         width: 200px;
@@ -2028,6 +2273,271 @@
         height: 300px;
         left: -250px;
         bottom: -100px;
+    }
+}
+@media screen and (max-width: 590px){
+    .contact_clients{
+        left: 50px;
+        top: 140px;
+        font-size: 23px;
+    }
+    .contact_clients_circle{
+        top: 180px;
+        left: 60px;
+    }
+    .contact_projects{
+        left: 230px;
+        top: 140px;
+        font-size: 23px;
+    }
+    .contact_projects_circle{
+        top: 180px;
+        left: 280px;
+    }
+    .contact_startup{
+        top: 310px;
+        left: 50px;
+        font-size: 23px;
+    }
+    .contact_startup_circle{
+        top: 350px;
+        left: 60px;
+    }
+    .contact_social_media{
+        top: 310px;
+        left: 230px;
+        font-size: 23px;
+    }
+    .contact_social_media_circle{
+        top: 350px;
+        left: 280px;
+    }
+    @media screen and (max-height: 450px){
+        .contact_clients{
+            top: 100px;
+        }
+        .contact_clients_circle{
+            top: 140px;
+            height: 80px;
+            width: 80px;
+            padding-top: 25px;
+        }
+        .contact_projects{
+            top: 100px;
+        }
+        .contact_projects_circle{
+            top: 140px;
+            height: 80px;
+            width: 80px;
+            padding-top: 25px;
+        }
+        .contact_startup{
+            top: 245px;
+        }
+        .contact_startup_circle{
+            top: 285px;
+            height: 80px;
+            width: 80px;
+            padding-top: 25px;
+        }
+        .contact_social_media{
+            top: 245px;
+        }
+        .contact_social_media_circle{
+            top: 285px;
+            height: 80px;
+            width: 80px;
+            padding-top: 25px;
+        }
+    }
+    @media screen and (max-height: 365px){
+        .contact_clients{
+            top: 60px;
+            font-size: 18px;
+        }
+        .contact_clients_circle{
+            top: 90px;
+            height: 60px;
+            width: 60px;
+            padding-top: 14px;
+        }
+        .contact_projects{
+            top: 60px;
+            font-size: 18px;
+        }
+        .contact_projects_circle{
+            top: 90px;
+            left: 270px;
+            height: 60px;
+            width: 60px;
+            padding-top: 14px;
+        }
+        .contact_startup{
+            top: 180px;
+            font-size: 18px;
+            left: 35px;
+        }
+        .contact_startup_circle{
+            top: 210px;
+            height: 60px;
+            width: 60px;
+            padding-top: 14px;
+        }
+        .contact_social_media{
+            top: 180px;
+            font-size: 18px;
+            left: 220px;
+        }
+        .contact_social_media_circle{
+            top: 210px;
+            left: 270px;
+            height: 60px;
+            width: 60px;
+            padding-top: 14px;
+        }
+    }
+}
+@media screen and (max-width: 460px){
+    .contact_clients{
+        left: 20px;
+        top: 140px;
+        font-size: 20px;
+    }
+    .contact_clients_circle{
+        top: 180px;
+        left: 20px;
+    }
+    .contact_projects{
+        left: 180px;
+        top: 140px;
+        font-size: 20px;
+    }
+    .contact_projects_circle{
+        top: 180px;
+        left: 200px;
+    }
+    .contact_startup{
+        top: 310px;
+        left: 20px;
+        font-size: 20px;
+    }
+    .contact_startup_circle{
+        top: 350px;
+        left: 20px;
+    }
+    .contact_social_media{
+        top: 310px;
+        left: 170px;
+        font-size: 20px;
+    }
+    .contact_social_media_circle{
+        top: 350px;
+        left: 200px;
+    }
+    @media screen and (max-height: 560px){
+        .contact_clients{
+            left: 40px;
+        }
+        .contact_clients_circle{
+            top: 180px;
+            left: 50px;
+            height: 80px;
+            width: 80px;
+            padding-top: 24px;
+        }
+    .contact_projects_circle{
+            top: 180px;
+            left: 220px;
+            height: 80px;
+            width: 80px;
+            padding-top: 24px;
+        }
+    .contact_startup_circle{
+            top: 350px;
+            left: 50px;
+            height: 80px;
+            width: 80px;
+            padding-top: 24px;
+        }
+    .contact_social_media_circle{
+            top: 350px;
+            left: 220px;
+            height: 80px;
+            width: 80px;
+            padding-top: 24px;
+        }
+    }
+    @media screen and (max-height: 560px){
+        .contact_startup{
+            top: 280px;
+        }
+        .contact_startup_circle{
+            top: 320px;
+            left: 50px;
+            height: 80px;
+            width: 80px;
+            padding-top: 24px;
+        }
+        .contact_social_media{
+            top: 280px;
+        }
+        .contact_social_media_circle{
+            top: 320px;
+            left: 220px;
+            height: 80px;
+            width: 80px;
+            padding-top: 24px;
+        }
+    }
+}
+@media screen and (max-width: 370px){
+    .contact_clients{
+        top: 10px;
+        left: 100px;
+        font-size: 18px;
+    }
+    .contact_clients_circle{
+        top: 35px;
+        left: 110px;
+        height: 70px;
+        width: 70px;
+        padding-top: 18px;
+    }
+    .contact_projects{
+        left: 70px;
+        top: 130px;
+        font-size: 18px;
+    }
+    .contact_projects_circle{
+        top: 155px;
+        left: 110px;
+        height: 70px;
+        width: 70px;
+        padding-top: 18px;
+    }
+    .contact_startup{
+        top: 250px;
+        left: 80px;
+        font-size: 18px;
+    }
+    .contact_startup_circle{
+        top: 275px;
+        left: 110px;
+        height: 70px;
+        width: 70px;
+        padding-top: 18px;
+    }
+    .contact_social_media{
+        top: 366px;
+        left: 60px;
+        font-size: 18px;
+    }
+    .contact_social_media_circle{
+        top: 390px;
+        left: 110px;
+        height: 70px;
+        width: 70px;
+        padding-top: 18px;
     }
 }
 /* Footer Section */
@@ -2149,6 +2659,16 @@
             height: 300px;
             left: -200px;
             top: -144px;
+        }
+    }
+}
+@media screen and (max-width: 932px){
+    @media screen and (max-height: 710px){
+        .footer_small_circle_ornage{
+            width: 300px;
+            height: 300px;
+            left: -200px;
+            top: -146px;
         }
     }
 }
