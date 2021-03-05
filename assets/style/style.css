@@ -1356,6 +1356,230 @@
 .achievements_process_landscape{
     display: none;
 }
+@media screen and (max-width: 1200px){
+    .achievements_clients{
+        left: 70px;
+    }
+    .achievements_clients_circle{    
+        left: 70px;
+    }
+    .achievements_projects{
+        left: 290px;
+    }
+    .achievements_projects_circle{    
+        left: 335px;
+    }
+    .achievements_startup{
+        left: 600px;
+    }
+    .achievements_startup_circle{
+        left: 630px;
+    }
+    .achievements_social_media{
+        left: 840px;
+    }
+    .achievements_social_media_circle{
+        left: 910px;
+    }
+    @media screen and (max-height: 600px){
+        .achievements_large_circle_blue{
+            width: 300px;
+            height: 300px;
+            right: -230px;
+            bottom: -200px;
+        }
+    }
+    @media screen and (max-height: 430px){
+        .achievements_clients{
+            top: 150px;
+        }
+        .achievements_clients_circle{    
+            top: 220px;
+        }
+        .achievements_projects{
+            top: 150px;
+        }
+        .achievements_projects_circle{    
+            top: 220px;
+        }
+        .achievements_startup{
+            top: 150px;
+        }
+        .achievements_startup_circle{
+            top: 220px;
+        }
+        .achievements_social_media{
+            top: 150px;
+        }
+        .achievements_social_media_circle{
+            top: 220px;
+        }  
+    }
+    @media screen and (max-height: 340px){
+        .achievements_clients{
+            top: 120px;
+        }
+        .achievements_clients_circle{    
+            top: 180px;
+        }
+        .achievements_projects{
+            top: 120px;
+        }
+        .achievements_projects_circle{    
+            top: 180px;
+        }
+        .achievements_startup{
+            top: 120px;
+        }
+        .achievements_startup_circle{
+            top: 180px;
+        }
+        .achievements_social_media{
+            top: 120px;
+        }
+        .achievements_social_media_circle{
+            top: 180px;
+        }  
+    }
+    @media screen and (max-height: 300px){
+        .achievements_clients{
+            top: 100px;
+        }
+        .achievements_clients_circle{    
+            top: 150px;
+        }
+        .achievements_projects{
+            top: 100px;
+        }
+        .achievements_projects_circle{    
+            top: 150px;
+        }
+        .achievements_startup{
+            top: 100px;
+        }
+        .achievements_startup_circle{
+            top: 150px;
+        }
+        .achievements_social_media{
+            top: 100px;
+        }
+        .achievements_social_media_circle{
+            top: 150px;
+        }  
+    }
+}
+@media screen and (max-width: 1100px){
+    .achievements_clients{
+        left: 40px;
+    }
+    .achievements_clients_circle{    
+        left: 40px;
+    }
+    .achievements_projects{
+        left: 220px;
+    }
+    .achievements_projects_circle{    
+        left: 275px;
+    }
+    .achievements_startup{
+        left: 460px;
+    }
+    .achievements_startup_circle{
+        left: 490px;
+    }
+    .achievements_social_media{
+        left: 670px;
+    }
+    .achievements_social_media_circle{
+        left: 730px;
+    }
+    @media screen and (max-height: 600px){
+        .achievements_large_circle_blue{
+            width: 300px;
+            height: 300px;
+            right: -230px;
+            bottom: -200px;
+        }
+    }
+    @media screen and (max-height: 430px){
+        .achievements_clients{
+            top: 150px;
+        }
+        .achievements_clients_circle{    
+            top: 220px;
+        }
+        .achievements_projects{
+            top: 150px;
+        }
+        .achievements_projects_circle{    
+            top: 220px;
+        }
+        .achievements_startup{
+            top: 150px;
+        }
+        .achievements_startup_circle{
+            top: 220px;
+        }
+        .achievements_social_media{
+            top: 150px;
+        }
+        .achievements_social_media_circle{
+            top: 220px;
+        }  
+    }
+    @media screen and (max-height: 340px){
+        .achievements_clients{
+            top: 120px;
+        }
+        .achievements_clients_circle{    
+            top: 180px;
+        }
+        .achievements_projects{
+            top: 120px;
+        }
+        .achievements_projects_circle{    
+            top: 180px;
+        }
+        .achievements_startup{
+            top: 120px;
+        }
+        .achievements_startup_circle{
+            top: 180px;
+        }
+        .achievements_social_media{
+            top: 120px;
+        }
+        .achievements_social_media_circle{
+            top: 180px;
+        }  
+    }
+    @media screen and (max-height: 300px){
+        .achievements_clients{
+            top: 100px;
+        }
+        .achievements_clients_circle{    
+            top: 150px;
+        }
+        .achievements_projects{
+            top: 100px;
+        }
+        .achievements_projects_circle{    
+            top: 150px;
+        }
+        .achievements_startup{
+            top: 100px;
+        }
+        .achievements_startup_circle{
+            top: 150px;
+        }
+        .achievements_social_media{
+            top: 100px;
+        }
+        .achievements_social_media_circle{
+            top: 150px;
+        }  
+    }
+}
 @media screen and (max-width: 932px){
     .achievements_clients{
         display: none;
@@ -1776,6 +2000,22 @@
     line-height: 15px;
     color: #FFFFFF;
 }
+@media screen and (max-width: 1200px){
+    @media screen and (max-height: 600px){
+        .contact_small_circle_ornage{
+            width: 300px;
+            height: 300px;
+            left: -200px;
+            bottom: -156px;
+        }
+        .contact_large_circle_blue{
+            width: 300px;
+            height: 300px;
+            right: -230px;
+            top: -100px;
+        }
+    }
+}
 @media screen and (max-width: 774px){
     .contact_large_circle_blue{
         width: 200px;
@@ -1901,6 +2141,16 @@
     line-height: 21px;
     text-align: center;
     color: #000000;
+}
+@media screen and (max-width: 1200px){
+    @media screen and (max-height: 600px){
+        .footer_small_circle_ornage{
+            width: 300px;
+            height: 300px;
+            left: -200px;
+            top: -144px;
+        }
+    }
 }
 @media screen and (max-width: 774px){
     .footer_small_circle_ornage{
