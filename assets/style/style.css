@@ -1870,7 +1870,7 @@
     position: absolute;
     width: 249px;
     height: 61px;
-    left: 516px;
+    left: calc(50% - 249px/2 + 0.5px);
     top: 58px;
     font-family: Fenix;
     font-style: normal;
@@ -1883,14 +1883,14 @@
     position: absolute;
     width: 64.53px;
     height: 62px;
-    left: 608px;
+    left: calc(50% - 64.53px/2 + 0.26px);
     top: 115px;
 }
 .contact_mail{
     position: absolute;
     width: 269px;
     height: 28px;
-    left: 533px;
+    left: calc(50% - 269px/2 + 27.5px);
     top: 188px;
     text-decoration: none;
     font-family: Fenix;
@@ -1904,7 +1904,7 @@
     position: absolute;
     width: 357px;
     height: 75px;
-    left: 468px;
+    left: calc(50% - 357px/2 + 6.5px);
     top: 225px;
     font-family: Raleway;
     font-style: normal;
@@ -1918,7 +1918,7 @@
     position: absolute;
     width: 85px;
     height: 38px;
-    left: 463px;
+    left: calc(50% - 85px/2 - 135.5px);
     top: 292px;
     font-family: Raleway;
     font-style: normal;
@@ -1931,7 +1931,7 @@
     position: absolute;
     width: 356px;
     height: 36px;
-    left: 463px;
+    left: calc(50% - 356px/2);
     top: 318px;
     background: #E2DFDF;
     border-radius: 9px;
@@ -1944,7 +1944,7 @@
     position: absolute;
     width: 85px;
     height: 38px;
-    left: 464px;
+    left: calc(50% - 85px/2 - 134.5px);
     top: 379px;
     font-family: Raleway;
     font-style: normal;
@@ -1957,7 +1957,7 @@
     position: absolute;
     width: 356px;
     height: 36px;
-    left: 464px;
+    left: calc(50% - 356px/2 + 1px);
     top: 405px;
     background: #E2DFDF;
     border-radius: 9px;
@@ -1970,7 +1970,7 @@
     position: absolute;
     width: 141px;
     height: 38px;
-    left: 463px;
+    left: calc(50% - 141px/2 - 107.5px);
     top: 472px;
     font-family: Raleway;
     font-style: normal;
@@ -1983,7 +1983,7 @@
     position: absolute;
     width: 356px;
     height: 142px;
-    left: 463px;
+    left: calc(50% - 356px/2);
     top: 498px;
     background: #E2DFDF;
     border-radius: 9px;
@@ -1995,7 +1995,7 @@
     position: absolute;
     width: 96px;
     height: 27px;
-    left: 712px;
+    left: calc(50% - 96px/2 + 120px);
     top: 651px;
     background: #1175BC;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
