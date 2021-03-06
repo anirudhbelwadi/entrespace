@@ -2674,11 +2674,211 @@
         }
     }
 }
+@media screen and (max-width: 860px){
+    .footer_bottom_footer{
+        height: 300px;
+    }
+    .footer_logo{
+        width: 80px;
+        height: auto;
+        left: 75px;
+        bottom: 200px;
+    }
+    .footer_company_name{
+        left: 170px;
+        bottom: 225px;
+        font-size: 33px;
+        
+    }
+    .footer_copyright1{
+        display: none;
+    }
+    .footer_copyright2{
+        display: none;
+    }
+    .footer_social_media_linkedin{
+        width: 40px;
+        height: 40px;
+        right: 150px;
+        bottom: 215px;
+    }
+    .footer_social_media_instagram{
+        width: 40px;
+        height: 40px;
+        right: 75px;
+        bottom: 215px;
+    }
+    .footer_email{
+        right: 75px;
+        bottom: 160px;
+        font-size: 20px;
+    }
+    .footer_privacy_policy{
+        left: calc(50% - 516px/2);
+        bottom: 20px;
+        font-size: 18px;
+    }
+}
 @media screen and (max-width: 774px){
     .footer_small_circle_ornage{
         width: 300px;
         height: 300px;
         left: -250px;
         top: -200px;
+    }
+}
+@media screen and (max-width: 720px){
+    .footer_bottom_footer{
+        height: 250px;
+    }
+    .footer_logo{
+        width: 65px;
+        height: auto;
+        left: 50px;
+        bottom: 160px;
+    }
+    .footer_company_name{
+        left: 125px;
+        bottom: 178px;
+        font-size: 27px;
+    }
+    .footer_social_media_linkedin{
+        width: 40px;
+        height: 40px;
+        right: 120px;
+        bottom: 170px;
+    }
+    .footer_social_media_instagram{
+        width: 40px;
+        height: 40px;
+        right: 50px;
+        bottom: 170px;
+    }
+    .footer_email{
+        right: 50px;
+        bottom: 120px;
+        font-size: 20px;
+    }
+    .footer_privacy_policy{
+        bottom: 18px;
+    }
+}
+@media screen and (max-width: 600px){
+    .footer_bottom_footer{
+        height: 200px;
+    }
+    .footer_logo{
+        width: 55px;
+        height: auto;
+        left: 40px;
+        bottom: 130px;
+    }
+    .footer_company_name{
+        left: 105px;
+        bottom: 145px;
+        font-size: 24px;
+    }
+    .footer_social_media_linkedin{
+        width: 35px;
+        height: 35px;
+        right: 100px;
+        bottom: 140px;
+    }
+    .footer_social_media_instagram{
+        width: 35px;
+        height: 35px;
+        right: 40px;
+        bottom: 140px;
+    }
+    .footer_email{
+        right: 40px;
+        width: fit-content;
+        bottom: 90px;
+        font-size: 18px;
+    }
+    .footer_privacy_policy{
+        bottom: 0px;
+    }
+}
+@media screen and (max-width: 500px){
+    .footer_bottom_footer{
+        height: 200px;
+    }
+    .footer_logo{
+        width: 40px;
+        height: auto;
+        left: 30px;
+        bottom: 130px;
+    }
+    .footer_company_name{
+        left: 78px;
+        bottom: 137px;
+        font-size: 20px;
+    }
+    .footer_social_media_linkedin{
+        width: 30px;
+        height: 30px;
+        right: 80px;
+        bottom: 135px;
+    }
+    .footer_social_media_instagram{
+        width: 30px;
+        height: 30px;
+        right: 30px;
+        bottom: 135px;
+    }
+    .footer_email{
+        right: 30px;
+        width: fit-content;
+        bottom: 90px;
+        font-size: 17px;
+    }
+    .footer_privacy_policy{
+        bottom: -10px;
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 430px){
+    .footer_bottom_footer{
+        height: 200px;
+    }
+    .footer_logo{
+        width: 40px;
+        height: auto;
+        left: calc(50% - 40px/2 - 50px);
+        bottom: 130px;
+    }
+    .footer_company_name{
+        left: calc(50% - 40px/2 - 5px);
+        bottom: 137px;
+        font-size: 20px;
+    }
+    .footer_social_media_linkedin{
+        width: 30px;
+        height: 30px;
+        right: calc(50% - 30px/2 + 30px);
+        bottom: 85px;
+    }
+    .footer_social_media_instagram{
+        width: 30px;
+        height: 30px;
+        right: calc(50% - 30px/2 - 30px);
+        bottom: 85px;
+    }
+    .footer_email{
+        right: calc(50% - 214px/2);
+        width: 214px;
+        bottom: 45px;
+        font-size: 17px;
+    }
+    .footer_privacy_policy{
+        bottom: -10px;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 350px){
+    .footer_privacy_policy{
+        bottom: -10px;
+        font-size: 11px;
     }
 }
