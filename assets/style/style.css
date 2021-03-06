@@ -1990,6 +1990,7 @@
     border: none;
     outline: none;
     padding: 10px 10px;
+    resize: none;
 }
 .contact_submit_form{
     position: absolute;
@@ -2032,7 +2033,133 @@
 .contact_social_media_circle{
     display: none;
 }
+@media screen and (max-height: 690px){
+    .contact_get_in_touch{
+        font-size: 40px;
+        text-align: center;
+    }
+    .contact_mail_icon{
+        width: 50px;
+        height: auto;
+        left: calc(50% - 50px/2 + 0.26px);
+        top: 110px;
+    }
+    .contact_mail{
+        top: 170px;
+    }
+    .contact_text{
+        top: 200px;
+        font-size: 16px;
+    }
+    .contact_name_label{
+        top: 260px;
+    }
+    .contact_name_input{
+        top: 285px;
+    }
+    .contact_email_label{
+        top: 330px;
+    }
+    .contact_email_input{
+        top: 355px;
+    }
+    .contact_message_label{
+        top: 400px;
+    }
+    .contact_message_input{
+        min-height: 75px;
+        max-height: 75px;
+        top: 425px;
+    }
+    .contact_submit_form{
+        top: 510px;
+    }
+}
+@media screen and (max-height: 540px){
+    .contact_get_in_touch{
+        font-size: 40px;
+        text-align: center;
+    }
+    .contact_mail_icon{
+        width: 50px;
+        height: auto;
+        left: calc(50% - 50px/2 + 0.26px);
+        top: 110px;
+    }
+    .contact_mail{
+        top: 170px;
+    }
+    .contact_text{
+        top: 200px;
+        font-size: 16px;
+    }
+    .contact_name_label{
+        top: 260px;
+    }
+    .contact_name_input{
+        top: 285px;
+    }
+    .contact_email_label{
+        top: 330px;
+    }
+    .contact_email_input{
+        top: 355px;
+    }
+    .contact_message_label{
+        top: 400px;
+    }
+    .contact_message_input{
+        min-height: 75px;
+        max-height: 75px;
+        top: 425px;
+    }
+    .contact_submit_form{
+        top: 505px;
+    }
+}
 @media screen and (max-width: 1200px){
+    @media screen and (max-height: 690px){
+        .contact_get_in_touch{
+            font-size: 40px;
+            text-align: center;
+        }
+        .contact_mail_icon{
+            width: 50px;
+            height: auto;
+            left: calc(50% - 50px/2 + 0.26px);
+            top: 110px;
+        }
+        .contact_mail{
+            top: 170px;
+        }
+        .contact_text{
+            top: 200px;
+            font-size: 16px;
+        }
+        .contact_name_label{
+            top: 260px;
+        }
+        .contact_name_input{
+            top: 285px;
+        }
+        .contact_email_label{
+            top: 330px;
+        }
+        .contact_email_input{
+            top: 355px;
+        }
+        .contact_message_label{
+            top: 400px;
+        }
+        .contact_message_input{
+            min-height: 75px;
+            max-height: 75px;
+            top: 425px;
+        }
+        .contact_submit_form{
+            top: 505px;
+        }
+    }
     @media screen and (max-height: 600px){
         .contact_small_circle_ornage{
             width: 300px;
@@ -2045,6 +2172,84 @@
             height: 300px;
             right: -230px;
             top: -100px;
+        }
+    }
+    @media screen and (max-height: 540px){
+        .contact_get_in_touch{
+            font-size: 30px;
+        }
+        .contact_mail_icon{
+            height: auto;
+            width: 30px;
+            left: calc(50% - 30px/2 + 0.26px);
+            top: 103px;
+        }
+        .contact_mail{
+            top: 140px;
+            font-size: 15px;
+            width: 269px;
+            text-align: center;
+            left: calc(50% - 269px/2);
+        }
+        .contact_text{
+            top: 160px;
+            font-size: 13px;
+        }
+        .contact_name_label{
+            top: 205px;
+        }
+        .contact_name_input{
+            top: 230px;
+        }
+        .contact_email_label{
+            top: 275px;
+        }
+        .contact_email_input{
+            top: 300px;
+        }
+        .contact_message_label{
+           top: 345px;
+        }
+        .contact_message_input{
+            top: 370px;
+        }
+        .contact_submit_form{
+            top: 455px;
+        }
+    }
+    @media screen and (max-height: 490px){
+        .contact_get_in_touch{
+            top: 10px;
+        }
+        .contact_mail_icon{
+            top: 55px;
+        }
+        .contact_mail{
+            top: 92px;
+        }
+        .contact_text{
+            top: 112px;
+        }
+        .contact_name_label{
+            top: 157px;
+        }
+        .contact_name_input{
+            top: 182px;
+        }
+        .contact_email_label{
+            top: 227px;
+        }
+        .contact_email_input{
+            top: 252px;
+        }
+        .contact_message_label{
+           top: 297px;
+        }
+        .contact_message_input{
+            top: 322px;
+        }
+        .contact_submit_form{
+            top: 410px;
         }
     }
 }
