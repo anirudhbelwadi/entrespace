@@ -3427,6 +3427,7 @@
         overflow: hidden;
         background-color: #F6F6F6;
         display: inherit;
+        bottom: 0;
     }
     .mobile_footer_bottom_footer{
         position: absolute;
