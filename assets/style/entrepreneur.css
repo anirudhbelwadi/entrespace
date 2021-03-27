@@ -224,6 +224,44 @@
     color: #F36E33;
     transition: 0.2s;
 }
+@media screen and (max-width: 840px){
+    .get_started_title{
+        width: 90%;
+        text-align: center;
+        left: 5%;
+    }
+    .get_started_investor_button{
+        left: calc(50% - 284px/2);
+        top: calc(50vh - 40px);
+    }
+    .get_started_entrepreneur_button{
+        left: calc(50% - 284px/2);
+        top: calc(50vh + 80px);
+    }
+}
+@media screen and (max-width: 454px){
+    .get_started_title{
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 380px){
+    .get_started_title{
+        font-size: 33px;
+    }
+}
+@media screen and (max-width: 317px){
+    .get_started_title{
+        font-size: 26px;
+    }
+    .get_started_investor_button{
+        width: 90%;
+        left: 5%;
+    }
+    .get_started_entrepreneur_button{
+        width: 90%;
+        left: 5%;
+    }
+}
 /* Form section */
 .entrepreneur_form{
     position: relative;
