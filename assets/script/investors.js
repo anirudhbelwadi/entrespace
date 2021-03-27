@@ -25,7 +25,7 @@ $(document).mouseover(e => {
     if ((!$cross1.is(e.target) // if the target of the click isn't the container...
         && $cross1.has(e.target).length === 0)
         && (!$cross2.is(e.target)
-        && $cross2.has(e.target).length === 0)) // ... nor a descendant of the container
+            && $cross2.has(e.target).length === 0)) // ... nor a descendant of the container
     {
         $cross1.removeClass('get_started_cross_one_hover');
         $cross2.removeClass('get_started_cross_two_hover');

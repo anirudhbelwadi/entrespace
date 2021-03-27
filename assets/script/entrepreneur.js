@@ -25,7 +25,7 @@ $(document).mouseover(e => {
     if ((!$cross1.is(e.target) // if the target of the click isn't the container...
         && $cross1.has(e.target).length === 0)
         && (!$cross2.is(e.target)
-        && $cross2.has(e.target).length === 0)) // ... nor a descendant of the container
+            && $cross2.has(e.target).length === 0)) // ... nor a descendant of the container
     {
         $cross1.removeClass('get_started_cross_one_hover');
         $cross2.removeClass('get_started_cross_two_hover');
@@ -92,12 +92,12 @@ $("#company_url_label").hide();
 $("#company_url").hide();
 $("#company_description_label").hide();
 $("#company_description").hide();
-$("#stage").change(function(){
+$("#stage").change(function () {
     stageChange($(this).val());
 });
 
-function stageChange(stateValue){
-    if(stateValue=="ideation"){
+function stageChange(stateValue) {
+    if (stateValue == "ideation") {
         $("#idea").show();
         $("#idea_label").show();
         $("#company_name_label").hide();
@@ -111,7 +111,7 @@ function stageChange(stateValue){
         $form_div.addClass('entrepreneur_form_ideation');
         $form_div.removeClass('entrepreneur_form_existing');
     }
-    else{
+    else {
         $("#idea").hide();
         $("#idea_label").hide();
         $("#company_name_label").show();
