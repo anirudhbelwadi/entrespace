@@ -107,6 +107,123 @@
         text-align: center;
     }
 }
+/* Get started pop up */
+.get_started_background{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    left: 0px;
+    top: 0px;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(15px);
+    display: none;
+}
+.get_started_cross_one{
+    position: fixed;
+    width: 50px;
+    height: 0px;
+    right: 15px;
+    top: 40px;
+    z-index: 1001;
+    border: 2px solid #1175BC;
+    transform: rotate(45deg);
+    transition: 0.2s;
+    display: none;
+}
+.get_started_cross_two{
+    position: fixed;
+    width: 50px;
+    height: 0px;
+    right: 15px;
+    top: 40px;
+    z-index: 1001;
+    border: 2px solid #1175BC;
+    transform: rotate(-45deg);
+    transition: 0.2s;
+    display: none;
+}
+.get_started_cross_one_hover{
+    width: 40px;
+    border: 2px solid #0b4874;
+    cursor: pointer;
+    right: 20px;
+    transition: 0.2s;
+}
+.get_started_cross_two_hover{
+    width: 40px;
+    border: 2px solid #0b4874;
+    cursor: pointer;
+    right: 20px;
+    transition: 0.2s;
+}
+.get_started_title{
+    position: fixed;
+    width: 805px;
+    height: 72px;
+    left: calc(50% - 805px/2 - 0.5px);
+    top: 130px;
+    font-family: Fenix;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 54px;
+    color: #1175BC;
+    z-index: 1001;
+    display: none;
+}
+.get_started_investor_button{
+    position: fixed;
+    width: 284px;
+    height: 80px;
+    left: calc(50% - 284px/2 - 201px);
+    top: calc(50vh - 40px);
+    background: #1175BC;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    text-decoration: none;
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 20px;
+    z-index: 1001;
+    display: none;
+}
+.get_started_entrepreneur_button{
+    position: fixed;
+    width: 284px;
+    height: 80px;
+    left: calc(50% - 284px/2 + 193px);
+    top: calc(50vh - 40px);
+    background: #1175BC;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    text-decoration: none;
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 20px;
+    z-index: 1001;
+    display: none;
+}
+.get_started_investor_button:hover{
+    background: #104266;
+    color: #F36E33;
+    transition: 0.2s;
+}
+.get_started_entrepreneur_button:hover{
+    background: #104266;
+    color: #F36E33;
+    transition: 0.2s;
+}
 /* Main Section */
 .main{
     height: 100vh;

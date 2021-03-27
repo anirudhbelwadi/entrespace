@@ -1,24 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/logo/logo.png">
     <!--Bootstrap CSS-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <title>Document</title>
-    <script type="text/javascript">
-        function ShowHideDiv() {
-            var stage = document.getElementById("stage");
-            var ideationDescriptionInput = document.getElementById("ideationDescription");
-            ideationDescriptionInput.style.display = stage.value == "ideation" ? "block" : "none";
-        }
-    </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <title>EntreSpace | Entrepreneur</title>
+    <link href="./assets/style/entrepreneur.css" rel="stylesheet">
 </head>
+
 <body>
-    <h1 class="text-center">Entreprenuer</h1>
-    <form class="container w-50" name="entrepreneurForm" method="post">
-        <label for="name" class="h4">Full Name&nbsp;<span style="color: red;">*</span></label>
+    <nav class="nav">
+        <a href="/">
+            <img src="./assets/img/logo/logo.png" class="nav_logo" alt="entrespace logo" width="37.29">
+            <h1 class="nav_logo_name">EntreSpace</h1>
+        </a>
+        <div class="nav_links">
+            <a href="#" class="nav_about">About</a>
+            <a href="./careers.html">Career</a>
+            <a href="#">Contact</a>
+            <a href="#" class="nav_link_get_started">Get Started</a>
+        </div>
+        <ul class="nav_about_dropdown" id="nav_about_dropdown">
+            <li>Who are we?</li>
+            <li>Our Mission</li>
+            <li>Values</li>
+            <li>Over Services</li>
+            <li>Our approach</li>
+        </ul>
+        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-list nav_button"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+        </svg>
+    </nav>
+    <section class="get_started_background"></section>
+    <div class="get_started_cross_one"></div>
+    <div class="get_started_cross_two"></div>
+    <div class="get_started_title">Are you an Investor or an Entrepreneur?</div>
+    <a href="./investors.html" class="get_started_investor_button">Investor</a>
+    <a href="./entrepreneur.html" class="get_started_entrepreneur_button">Entrepreneur</a>
+    <main class="entrepreneur_form">
+        <h2 class="entrepreneur_title">Entrepreneur</h2>
+        <form action="" autocomplete="off">
+            <label class="entrepreneur_name_label" for="name">Name</label>
+            <input class="entrepreneur_name_input" type="text" name="name" id="name" />
+            <label class="entrepreneur_email_label" for="email">Email</label>
+            <input class="entrepreneur_email_input" type="email" name="email" id="email" />
+            <label class="entrepreneur_phone_label" for="phone">Contact Number</label>
+            <input class="entrepreneur_phone_input" type="text" name="phone" id="phone" />
+            <label class="entrepreneur_address_label" for="address">Address</label>
+            <textarea class="entrepreneur_address_input" name="address" id="address"></textarea>
+            <label class="entrepreneur_stage_label" for="stage">At which stage is your business?</label>
+            <select class="entrepreneur_stage_input" name="stage" id="stage">
+                <option selected disabled>Select a stage</option>
+                <option value="ideation">Ideation</option>
+                <option value="existing">Existing</option>
+            </select>
+            <!-- Ideation -->
+            <label class="entrepreneur_idea_label" for="idea" id="idea_label">Describe your idea/product & what it will
+                do.</label>
+            <textarea class="entrepreneur_idea_input" name="idea" id="idea"></textarea>
+            <!-- Exiting -->
+            <label class="entrepreneur_company_name_label" for="company_name" id="company_name_label">Company
+                Name</label>
+            <input class="entrepreneur_company_name_input" type="text" name="company_name" id="company_name" />
+            <label class="entrepreneur_company_url_label" for="company_url" id="company_url_label">Company
+                website/Social Media URL</label>
+            <input class="entrepreneur_company_url_input" type="text" name="company_url" id="company_url" />
+            <label class="entrepreneur_company_description_label" for="company_description"
+                id="company_description_label">Company Description</label>
+            <textarea class="entrepreneur_company_description_input" name="company_description"
+                id="company_description"></textarea>
+            <button id="entrepreneur_submit_form" class="entrepreneur_submit_form">Submit</button>
+        </form>
+    </main>
+    <footer class="footer">
+        <div class="footer_bottom_footer"></div>
+        <img src="./assets/img/logo/logo.png" class="footer_logo" alt="">
+        <div class="footer_company_name">EntreSpace</div>
+        <p class="footer_copyright1">Lorem ipsum dolor sit amet consectetur</p>
+        <p class="footer_copyright2">Lorem ipsum dolor sit amet consectetur</p>
+        <img src="./assets/img/social media/linkedin.png" class="footer_social_media_linkedin" alt="">
+        <img src="./assets/img/social media/instagram.png" class="footer_social_media_instagram" alt="">
+        <a href="mailto:connect@entrespace.in" class="footer_email">Email- connect@entrespace.in</a>
+        <p class="footer_privacy_policy">© EntreSpace 2021 All rights reserved. Privacy Policy</p>
+    </footer>
+    <footer class="mobile_footer">
+        <div class="mobile_footer_bottom_footer"></div>
+        <img src="./assets/img/logo/logo.png" class="mobile_footer_logo" alt="">
+        <div class="mobile_footer_company_name">EntreSpace</div>
+        <p class="mobile_footer_copyright1">Lorem ipsum dolor sit amet consectetur</p>
+        <p class="mobile_footer_copyright2">Lorem ipsum dolor sit amet consectetur</p>
+        <img src="./assets/img/social media/linkedin.png" class="mobile_footer_social_media_linkedin" alt="">
+        <img src="./assets/img/social media/instagram.png" class="mobile_footer_social_media_instagram" alt="">
+        <a href="mailto:connect@entrespace.in" class="mobile_footer_email">Email- connect@entrespace.in</a>
+        <p class="mobile_footer_privacy_policy">© EntreSpace 2021 All rights reserved. Privacy Policy</p>
+    </footer>
+    <!--<h1 class="text-center">Careers</h1>
+    <form class="container w-50" name="careerForm" method="post">
+        <label for="name" class="h4">Name&nbsp;<span style="color: red;">*</span></label>
         <input type="text" class="form-control" name="name" id="name" placeholder="Enter name" required>
         <br>
         <label for="email" class="h4">Email&nbsp;<span style="color: red;">*</span></label>
@@ -27,42 +112,53 @@
         <label for="phone" class="h4">Phone No.&nbsp;<span style="color: red;">*</span></label>
         <input type="text" class="form-control" name="phone" id="phone" placeholder="Enter phone number" required>
         <br>
-        <label for="address" class="h4">Address&nbsp;<span style="color: red;">*</span></label>
-        <textarea type="text" style="max-height: 100px;height: 70px;" class="form-control" name="address" id="address" placeholder="Enter phone number" required></textarea>
-        <br>
-        <label for="stage" class="h4">What stage is your business at?&nbsp;<span style="color: red;">*</span></label>
-        <select class="form-select" name="stage" id="stage" required onchange = "toggleIdea()">
-            <option class="form-control" value="default" selected disabled>Stage</option>
-            <option class="form-control" value="ideation">Ideation</option>
-            <option class="form-control" value="existing">Existing</option>
+        <label for="role" class="h4">Role:&nbsp;<span style="color: red;">*</span></label>
+        <select class="form-select" name="role" id="role" required>
+            <option class="form-control" value="default" selected disabled>Role</option>
+            <option class="form-control" value="consultancy">Consultancy</option>
+            <option class="form-control" value="marketing">Marketing</option>
+            <option class="form-control" value="legal">Legal</option>
+            <option class="form-control" value="technical support">Technical Support</option>
+            <option class="form-control" value="graphics">Graphics</option>
+            <option class="form-control" value="financial">Financial</option>
         </select>
         <br>
-        <label for="ideationDescription" id="ideationdescription" class="h4">Please Describe your idea & product and what it will do.&nbsp;<span style="color: red;">*</span></label>
-        <textarea type="text" style="max-height: 100px;height: 70px;" class="form-control" name="ideationDescription" id="ideationDescription" placeholder="Enter description" required></textarea>
-        <br>
-        <label for="company" class="h4">Company name&nbsp;<span style="color: red;">*</span></label>
-        <input type="text" class="form-control" name="company" id="company" placeholder="Enter company name" required>
-        <br>
-        <label for="companyUrl" class="h4">Company URL or any social media link(Facebook, Instagram etc)&nbsp;<span style="color: red;">*</span></label>
-        <input type="url" min="1" class="form-control" name="companyUrl" id="companyUrl" placeholder="Enter URL" required>
-        <br>
-        <label for="address" class="h4">Please Describe your company & product.&nbsp;<span style="color: red;">*</span></label>
-        <textarea type="text" style="max-height: 100px;height: 70px;" class="form-control" name="address" id="address" placeholder="Enter description" required></textarea>
-        <br>
-        <!--<label for="cv" class="h4" class="form-label">Upload your CV&nbsp;<span style="color: red;">*</span></label>
+        <label for="tenure" class="h4">Applying as:&nbsp;<span style="color: red;">*</span></label>
+        <select class="form-select" name="tenure" id="tenure" required>
+            <option class="form-control" value="default" selected disabled>Applying as</option>
+            <option class="form-control" value="Full Time">Full Time</option>
+            <option class="form-control" value="Part Time">Part Time</option>
+            <option class="form-control" value="Internship">Internship</option>
+            <option class="form-control" value="Live Project">Live Project</option>
+        </select>
+        <br>-->
+    <!--<label for="cv" class="h4" class="form-label">Upload your CV&nbsp;<span style="color: red;">*</span></label>
         <input class="form-control" type="file" id="cv" name="cv" required>-->
+    <!--<br>
         <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+    </form>-->
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbzVECdcpPRZeFh50IXagwfxeFJ68RW6v4Sps52DZ7PEZc2AG8DDzGM1/exec'
-        const form = document.forms['entrepreneurForm']
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz7WTO0A730agPKjCPMGcjVUqz4KJYMyJWXotdaMM_bwGrLEE22a46P5A/exec'
+        const form = document.forms['careerForm']
         form.addEventListener('submit', e => {
             e.preventDefault()
             fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => alert("Thank you for showing your interest in investing! You will be contacted soon by our team."))
+                .then(response => alert("Thank you for showing your interest in working with us! You will be contacted soon by our team."))
                 .catch(error => console.error(error.message))
-            document.getElementById("entrepreneurForm").reset();
+            document.getElementById("careerForm").reset();
         });
     </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="./assets/script/entrepreneur.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

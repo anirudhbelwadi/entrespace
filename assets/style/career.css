@@ -1,0 +1,1302 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fenix&display=swap');
+/* Nav Section */
+.nav{
+    background-color: white !important;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    height: 72px;
+}
+.nav_logo{
+    position: absolute;
+    width: 37px;
+    left: 27px;
+    top: 16px;
+}
+.nav_logo_name{
+    position: absolute;
+    text-decoration: none;
+    top: 24px;
+    left: 72px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    color: #1175BC;
+}
+.nav_links{
+    position: absolute;
+    right: 0;
+    top: 25px;
+    display: flex;
+    flex-direction: row;
+}
+.nav_links a{
+    text-decoration: none;
+    color: black;
+    width: max-content;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    margin-right: 73px;
+}
+.nav_link_get_started{
+    font-weight: 800 !important;
+    color: #1175BC !important;
+}
+.nav_about_dropdown{
+    position: absolute;
+    width: 166px;
+    height: 220px;
+    right: 432px;
+    top: 72px;
+    background: #1175BC;
+    border-radius: 0px 0px 20px 20px;
+    list-style: none;
+    padding-top: 11px;
+    padding-left: 0px;
+    visibility: hidden;
+}
+.nav_about_dropdown_visible{
+    visibility: visible;
+}
+.nav_about_dropdown li{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    padding: 8px 0px 8px 13px;
+}
+.nav_about_dropdown li:hover{
+    background: #FFFFFF;
+    cursor: pointer;
+    color: #1175BC;
+}
+.nav_button{
+    visibility: hidden;
+}
+.nav_about_dropdown_mobile{
+    visibility: hidden;
+}
+@media screen and (max-width: 800px) {
+    .nav_links{
+        display: none;
+    }
+    .nav_button{
+        position: absolute;
+        top: 14px;
+        right: 22px;
+        fill: #1175BC;
+        visibility: visible;
+        cursor: pointer;
+    }
+    .nav_about_dropdown_mobile{
+        visibility: visible;
+        position: absolute;
+        height: 220px;
+        width: 100%;
+        right: 0px;
+        top: 72px;
+        transition: 0.5s;
+        text-align: center;
+    }
+}
+/* Get started pop up */
+.get_started_background{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    left: 0px;
+    top: 0px;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(15px);
+    display: none;
+}
+.get_started_cross_one{
+    position: fixed;
+    width: 50px;
+    height: 0px;
+    right: 15px;
+    top: 40px;
+    z-index: 1001;
+    border: 2px solid #1175BC;
+    transform: rotate(45deg);
+    transition: 0.2s;
+    display: none;
+}
+.get_started_cross_two{
+    position: fixed;
+    width: 50px;
+    height: 0px;
+    right: 15px;
+    top: 40px;
+    z-index: 1001;
+    border: 2px solid #1175BC;
+    transform: rotate(-45deg);
+    transition: 0.2s;
+    display: none;
+}
+.get_started_cross_one_hover{
+    width: 40px;
+    border: 2px solid #0b4874;
+    cursor: pointer;
+    right: 20px;
+    transition: 0.2s;
+}
+.get_started_cross_two_hover{
+    width: 40px;
+    border: 2px solid #0b4874;
+    cursor: pointer;
+    right: 20px;
+    transition: 0.2s;
+}
+.get_started_title{
+    position: fixed;
+    width: 805px;
+    height: 72px;
+    left: calc(50% - 805px/2 - 0.5px);
+    top: 130px;
+    font-family: Fenix;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 54px;
+    color: #1175BC;
+    z-index: 1001;
+    display: none;
+}
+.get_started_investor_button{
+    position: fixed;
+    width: 284px;
+    height: 80px;
+    left: calc(50% - 284px/2 - 201px);
+    top: calc(50vh - 40px);
+    background: #1175BC;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    text-decoration: none;
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 20px;
+    z-index: 1001;
+    display: none;
+}
+.get_started_entrepreneur_button{
+    position: fixed;
+    width: 284px;
+    height: 80px;
+    left: calc(50% - 284px/2 + 193px);
+    top: calc(50vh - 40px);
+    background: #1175BC;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    text-decoration: none;
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 20px;
+    z-index: 1001;
+    display: none;
+}
+.get_started_investor_button:hover{
+    background: #104266;
+    color: #F36E33;
+    transition: 0.2s;
+}
+.get_started_entrepreneur_button:hover{
+    background: #104266;
+    color: #F36E33;
+    transition: 0.2s;
+}
+/* Form section */
+.career_form{
+    position: relative;
+    width: 100%;
+    height: 820px;
+    background-color: #F6F6F6;
+}
+.careers_title{
+    position: absolute;
+    width: 100%;
+    height: 61px;
+    text-align: center;
+    top: 120px;
+    font-family: Fenix;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 54px;
+    color: #1175BC;
+}
+.careers_name_label{
+    position: absolute;
+    width: 85px;
+    height: 38px;
+    left: calc(50% - 85px/2 - 135.5px);
+    top: 210px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #1175BC;
+}
+.careers_name_input{
+    position: absolute;
+    width: 356px;
+    height: 36px;
+    left: calc(50% - 356px/2);
+    top: 236px;
+    background: #E2DFDF;
+    border-radius: 9px;
+    border: none;
+    outline: none;
+    padding: 0px 10px;
+}
+.careers_email_label{
+    position: absolute;
+    width: 85px;
+    height: 38px;
+    left: calc(50% - 85px/2 - 134.5px);
+    top: 297px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #1175BC;
+}
+.careers_email_input{
+    position: absolute;
+    width: 356px;
+    height: 36px;
+    left: calc(50% - 356px/2 + 1px);
+    top: 323px;
+    background: #E2DFDF;
+    border-radius: 9px;
+    border: none;
+    outline: none;
+    padding: 0px 10px;
+}
+.careers_phone_label{
+    position: absolute;
+    width: 163px;
+    height: 38px;
+    left: calc(50% - 163px/2 - 95.5px);
+    top: 384px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #1175BC;    
+}
+.careers_phone_input{
+    position: absolute;
+    width: 356px;
+    height: 36px;
+    left: calc(50% - 356px/2 + 1px);
+    top: 410px;
+    background: #E2DFDF;
+    border-radius: 9px;
+    border: none;
+    outline: none;
+    padding: 0px 10px;
+}
+.careers_role_label{
+    position: absolute;
+    width: 240px;
+    height: 38px;
+    left: calc(50% - 240px/2 - 57px);
+    top: 471px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #1175BC;    
+}
+.careers_role_input{
+    position: absolute;
+    width: 356px;
+    height: 36px;
+    left: calc(50% - 356px/2 + 1px);
+    top: 497px;
+    background: #E2DFDF;
+    border-radius: 9px;
+    border: none;
+    outline: none;
+    padding: 0px 10px;
+    font-family: Raleway;
+    font-style: normal;
+}
+.careers_role_type_label{
+    position: absolute;
+    width: 240px;
+    height: 38px;
+    left: calc(50% - 240px/2 - 57px);
+    top: 558px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #1175BC;
+}
+.careers_role_type_input{
+    position: absolute;
+    width: 356px;
+    height: 36px;
+    left: calc(50% - 356px/2 + 1px);
+    top: 584px;
+    background: #E2DFDF;
+    border-radius: 9px;
+    border: none;
+    outline: none;
+    padding: 0px 10px;
+    font-family: Raleway;
+    font-style: normal;
+}
+.careers_resume_label{
+    position: absolute;
+    width: 350px;
+    height: 38px;
+    left: calc(50% - 240px/2 - 57px);
+    top: 645px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #1175BC;
+}
+.careers_resume_input{
+    position: absolute;
+    width: 356px;
+    height: 36px;
+    left: calc(50% - 356px/2 + 1px);
+    top: 713px;
+    background: #E2DFDF;
+    border-radius: 9px;
+    border: none;
+    outline: none;
+    padding: 0px 10px;
+}
+.careers_submit_form{
+    position: absolute;
+    width: 96px;
+    height: 27px;
+    left: calc(50% - 96px/2 + 131px);
+    top: 770px;
+    background: #1175BC;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    border: none;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+    color: #FFFFFF;
+}
+@media screen and (max-width: 400px){
+    .careers_name_label{
+        width: 92%;
+        left: 4%;
+    }
+    .careers_name_input{
+        width: 92%;
+        left: 4%;
+    }
+    .careers_email_label{
+        width: 92%;
+        left: 4%;
+    }
+    .careers_email_input{
+        width: 92%;
+        left: 4%;
+    }
+    .careers_phone_label{
+        width: 92%;
+        left: 4%; 
+    }
+    .careers_phone_input{
+        width: 92%;
+        left: 4%;
+    }
+    .careers_role_label{
+        width: 92%;
+        left: 4%;    
+    }
+    .careers_role_input{
+        width: 92%;
+        left: 4%;
+    }
+    .careers_role_type_label{
+        width: 92%;
+        left: 4%;
+    }
+    .careers_role_type_input{
+        width: 92%;
+        left: 4%;
+    }
+    .careers_resume_label{
+        width: 92%;
+        left: 4%;
+    }
+    .careers_resume_input{
+        width: 92%;
+        left: 4%;
+    }
+    .careers_submit_form{
+        left: auto;
+        right: 2%;
+    }
+}
+@media screen and (max-width: 351px){
+    .careers_resume_input{
+        top: 734px;
+    }
+    .careers_submit_form{   
+        top: 790px;
+    }
+}
+/* Footer section */
+.footer{
+    position: relative;
+    height: 450px;
+    background-color: #F6F6F6;
+}
+.footer_bottom_footer{
+    position: absolute;
+    width: 100%;
+    height: 395px;
+    left: 0px;
+    bottom: 0px;
+    background: rgba(255, 207, 6, 0.06);
+}
+.footer_logo{
+    position: absolute;
+    width: 94.73px;
+    height: 94px;
+    left: 102px;
+    bottom: 266px;
+}
+.footer_company_name{
+    position: absolute;
+    width: 211px;
+    height: 35px;
+    left: 212px;
+    bottom: 296px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 42px;
+    color: #1175BC;
+    
+}
+.footer_copyright1{
+    position: absolute;
+    width: 417px;
+    height: 32px;
+    left: 106px;
+    bottom: 204px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    display: none;
+}
+.footer_copyright2{
+    position: absolute;
+    width: 417px;
+    height: 32px;
+    left: 106px;
+    bottom: 172px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    display: none;
+}
+.footer_social_media_linkedin{
+    position: absolute;
+    width: 49px;
+    height: 49px;
+    right: 213px;
+    bottom: 289px;
+}
+.footer_social_media_instagram{
+    position: absolute;
+    width: 49px;
+    height: 49px;
+    right: 137px;
+    bottom: 289px;
+}
+.footer_email{
+    position: absolute;
+    width: 255px;
+    height: 28px;
+    right: 127px;
+    bottom: 236px;
+    font-family: Fenix;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 22px;
+    color: #1175BC;
+    text-decoration: none;
+}
+.footer_privacy_policy{
+    position: absolute;
+    width: 516px;
+    height: 32px;
+    left: calc(50% - 516px/2);
+    bottom: 48px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #000000;
+}
+@media screen and (max-width: 1200px){
+    @media screen and (max-height: 600px){
+        .footer_small_circle_ornage{
+            width: 300px;
+            height: 300px;
+            left: -200px;
+            top: -144px;
+        }
+    }
+}
+@media screen and (max-width: 932px){
+    .footer{
+        display: none;
+    }
+    .footer_get_in_touch{
+        display: inherit;
+    }
+    .footer_mail_icon{
+        display: inherit;
+    }
+    .footer_mail{
+        display: inherit;
+    }
+    .footer_text{
+        display: inherit;
+    }
+    .footer_name_label{
+        display: inherit;
+    }
+    .footer_name_input{
+        display: inherit;
+    }
+    .footer_email_label{
+        display: inherit;
+    }
+    .footer_email_input{
+        display: inherit;
+    }
+    .footer_message_label{
+        display: inherit;
+    }
+    .footer_message_input{
+        display: inherit;
+    }
+    .footer_submit_form{
+        display: inherit;
+    }
+    .footer_bottom_footer{
+        display: none;
+    }
+    .footer_logo{
+        display: none;
+    }
+    .footer_company_name{
+        display: none;
+    }
+    .footer_copyright1{
+        display: none;
+    }
+    .footer_copyright2{
+        display: none;
+    }
+    .footer_social_media_linkedin{
+        display: none;
+    }
+    .footer_social_media_instagram{
+        display: none;
+    }
+    .footer_email{
+        display: none;
+    }
+    .footer_privacy_policy{
+        display: none;
+    }
+    @media screen and (max-height: 710px){
+        .footer_small_circle_ornage{
+            width: 300px;
+            height: 300px;
+            left: -200px;
+            top: -146px;
+        }
+    }
+    @media screen and (max-height: 680px){
+        .footer_get_in_touch{
+            top: 10px;
+        }
+        .footer_mail_icon{
+            top: 60px;
+        }
+        .footer_mail{
+            top: 130px;
+        }
+        .footer_text{
+            top: 155px;
+        }
+        .footer_name_label{
+            top: 210px;
+        }
+        .footer_name_input{
+            top: 235px;
+        }
+        .footer_email_label{
+            top: 275px;
+        }
+        .footer_email_input{
+            top: 300px;
+        }
+        .footer_message_label{
+            top: 340px;
+        }
+        .footer_message_input{
+            top: 365px;
+        }
+        .footer_submit_form{
+            top: 520px;
+        }
+    }
+    @media screen and (max-height: 550px){
+        .footer_message_input{
+            height: 80px;
+        }
+        .footer_submit_form{
+            top: 455px;
+        }
+    }
+    @media screen and (max-height: 490px){
+        .footer_get_in_touch{
+            font-size: 30px;
+            top: 0px;
+            text-align: center;
+        }
+        .footer_mail_icon{
+            top: 45px;
+            height: 40px;
+            width: auto;
+            left: calc(50% - 20px);
+        }
+        .footer_mail{
+            top: 90px;
+        }
+        .footer_text{
+            top: 110px;
+            font-size: 15px;
+        }
+        .footer_name_label{
+            top: 150px;
+        }
+        .footer_name_input{
+            top: 175px;
+        }
+        .footer_email_label{
+            top: 220px;
+        }
+        .footer_email_input{
+            top: 245px;
+        }
+        .footer_message_label{
+            top: 290px;
+        }
+        .footer_message_input{
+            top: 315px;
+        }
+        .footer_submit_form{
+            top: 400px;
+        }
+    }
+}
+@media screen and (max-width: 860px){
+    .footer_bottom_footer{
+        height: 300px;
+    }
+    .footer_logo{
+        width: 80px;
+        height: auto;
+        left: 75px;
+        bottom: 200px;
+    }
+    .footer_company_name{
+        left: 170px;
+        bottom: 225px;
+        font-size: 33px;
+        
+    }
+    .footer_copyright1{
+        display: none;
+    }
+    .footer_copyright2{
+        display: none;
+    }
+    .footer_social_media_linkedin{
+        width: 40px;
+        height: 40px;
+        right: 150px;
+        bottom: 215px;
+    }
+    .footer_social_media_instagram{
+        width: 40px;
+        height: 40px;
+        right: 75px;
+        bottom: 215px;
+    }
+    .footer_email{
+        right: 75px;
+        bottom: 160px;
+        font-size: 20px;
+    }
+    .footer_privacy_policy{
+        left: calc(50% - 516px/2);
+        bottom: 20px;
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 774px){
+    .footer_small_circle_ornage{
+        width: 300px;
+        height: 300px;
+        left: -250px;
+        top: -200px;
+    }
+}
+@media screen and (max-width: 720px){
+    .footer_bottom_footer{
+        height: 250px;
+    }
+    .footer_logo{
+        width: 65px;
+        height: auto;
+        left: 50px;
+        bottom: 160px;
+    }
+    .footer_company_name{
+        left: 125px;
+        bottom: 178px;
+        font-size: 27px;
+    }
+    .footer_social_media_linkedin{
+        width: 40px;
+        height: 40px;
+        right: 120px;
+        bottom: 170px;
+    }
+    .footer_social_media_instagram{
+        width: 40px;
+        height: 40px;
+        right: 50px;
+        bottom: 170px;
+    }
+    .footer_email{
+        right: 50px;
+        bottom: 120px;
+        font-size: 20px;
+    }
+    .footer_privacy_policy{
+        bottom: 18px;
+    }
+}
+@media screen and (max-width: 600px){
+    .footer_bottom_footer{
+        height: 200px;
+    }
+    .footer_logo{
+        width: 55px;
+        height: auto;
+        left: 40px;
+        bottom: 130px;
+    }
+    .footer_company_name{
+        left: 105px;
+        bottom: 145px;
+        font-size: 24px;
+    }
+    .footer_social_media_linkedin{
+        width: 35px;
+        height: 35px;
+        right: 100px;
+        bottom: 140px;
+    }
+    .footer_social_media_instagram{
+        width: 35px;
+        height: 35px;
+        right: 40px;
+        bottom: 140px;
+    }
+    .footer_email{
+        right: 40px;
+        width: fit-content;
+        bottom: 90px;
+        font-size: 18px;
+    }
+    .footer_privacy_policy{
+        bottom: 0px;
+    }
+}
+@media screen and (max-width: 500px){
+    .footer_bottom_footer{
+        height: 200px;
+    }
+    .footer_logo{
+        width: 40px;
+        height: auto;
+        left: 30px;
+        bottom: 130px;
+    }
+    .footer_company_name{
+        left: 78px;
+        bottom: 137px;
+        font-size: 20px;
+    }
+    .footer_social_media_linkedin{
+        width: 30px;
+        height: 30px;
+        right: 80px;
+        bottom: 135px;
+    }
+    .footer_social_media_instagram{
+        width: 30px;
+        height: 30px;
+        right: 30px;
+        bottom: 135px;
+    }
+    .footer_email{
+        right: 30px;
+        width: fit-content;
+        bottom: 90px;
+        font-size: 17px;
+    }
+    .footer_privacy_policy{
+        bottom: -10px;
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 430px){
+    .footer_bottom_footer{
+        height: 200px;
+    }
+    .footer_logo{
+        width: 40px;
+        height: auto;
+        left: calc(50% - 40px/2 - 50px);
+        bottom: 130px;
+    }
+    .footer_company_name{
+        left: calc(50% - 40px/2 - 5px);
+        bottom: 137px;
+        font-size: 20px;
+    }
+    .footer_social_media_linkedin{
+        width: 30px;
+        height: 30px;
+        right: calc(50% - 30px/2 + 30px);
+        bottom: 85px;
+    }
+    .footer_social_media_instagram{
+        width: 30px;
+        height: 30px;
+        right: calc(50% - 30px/2 - 30px);
+        bottom: 85px;
+    }
+    .footer_email{
+        right: calc(50% - 214px/2);
+        width: 214px;
+        bottom: 45px;
+        font-size: 17px;
+    }
+    .footer_privacy_policy{
+        bottom: -10px;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 390px){
+    .footer_text{
+        font-size: 13px;
+    }
+    .footer_name_label{
+        left: 5%;
+    }
+    .footer_name_input{
+        left: 5%;
+        width: 90%;
+    }
+    .footer_email_label{
+        left: 5%;
+    }
+    .footer_email_input{
+        left: 5%;
+        width: 90%;
+    }
+    .footer_message_label{
+        left: 5%;
+    }
+    .footer_message_input{
+        left: 5%;
+        width: 90%;
+    }
+    .footer_submit_form{
+        left: inherit;
+        right: 5%;
+    }
+}
+@media screen and (max-width: 350px){
+    .footer_privacy_policy{
+        bottom: -10px;
+        font-size: 11px;
+    }
+}
+/* Mobile Footer Section */
+.mobile_footer{
+    display: none;
+}
+@media screen and (max-width: 932px){
+    .mobile_footer{
+        height: 395px;
+        position: relative;
+        overflow: hidden;
+        background-color: #F6F6F6;
+        display: inherit;
+        bottom: 0;
+    }
+    .mobile_footer_bottom_footer{
+        position: absolute;
+        width: 100%;
+        height: 395px;
+        left: 0px;
+        bottom: 0px;
+        background: rgba(255, 207, 6, 0.06);
+    }
+    .mobile_footer_logo{
+        position: absolute;
+        width: 94.73px;
+        height: 94px;
+        left: 102px;
+        bottom: 266px;
+    }
+    .mobile_footer_company_name{
+        position: absolute;
+        width: 211px;
+        height: 35px;
+        left: 212px;
+        bottom: 296px;
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 42px;
+        color: #1175BC;
+        
+    }
+    .mobile_footer_copyright1{
+        position: absolute;
+        width: 417px;
+        height: 32px;
+        left: 106px;
+        bottom: 204px;
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;
+        color: #000000;
+        display: none;
+    }
+    .mobile_footer_copyright2{
+        position: absolute;
+        width: 417px;
+        height: 32px;
+        left: 106px;
+        bottom: 172px;
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;
+        color: #000000;
+        display: none;
+    }
+    .mobile_footer_social_media_linkedin{
+        position: absolute;
+        width: 49px;
+        height: 49px;
+        right: 213px;
+        bottom: 289px;
+    }
+    .mobile_footer_social_media_instagram{
+        position: absolute;
+        width: 49px;
+        height: 49px;
+        right: 137px;
+        bottom: 289px;
+    }
+    .mobile_footer_email{
+        position: absolute;
+        width: 255px;
+        height: 28px;
+        right: 127px;
+        bottom: 236px;
+        font-family: Fenix;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 22px;
+        color: #1175BC;
+        text-decoration: none;
+    }
+    .mobile_footer_privacy_policy{
+        position: absolute;
+        width: 516px;
+        height: 32px;
+        left: calc(50% - 516px/2);
+        bottom: 48px;
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        color: #000000;
+    }
+}
+@media screen and (max-width: 860px){
+    .mobile_footer_bottom_footer{
+        height: 300px;
+    }
+    .mobile_footer_logo{
+        width: 80px;
+        height: auto;
+        left: 75px;
+        bottom: 200px;
+    }
+    .mobile_footer_company_name{
+        left: 170px;
+        bottom: 225px;
+        font-size: 33px;
+        
+    }
+    .mobile_footer_copyright1{
+        display: none;
+    }
+    .mobile_footer_copyright2{
+        display: none;
+    }
+    .mobile_footer_social_media_linkedin{
+        width: 40px;
+        height: 40px;
+        right: 150px;
+        bottom: 215px;
+    }
+    .mobile_footer_social_media_instagram{
+        width: 40px;
+        height: 40px;
+        right: 75px;
+        bottom: 215px;
+    }
+    .mobile_footer_email{
+        right: 75px;
+        bottom: 160px;
+        font-size: 20px;
+    }
+    .mobile_footer_privacy_policy{
+        left: calc(50% - 516px/2);
+        bottom: 20px;
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 720px){
+    .mobile_footer_bottom_footer{
+        height: 250px;
+    }
+    .mobile_footer_logo{
+        width: 65px;
+        height: auto;
+        left: 50px;
+        bottom: 160px;
+    }
+    .mobile_footer_company_name{
+        left: 125px;
+        bottom: 178px;
+        font-size: 27px;
+    }
+    .mobile_footer_social_media_linkedin{
+        width: 40px;
+        height: 40px;
+        right: 120px;
+        bottom: 170px;
+    }
+    .mobile_footer_social_media_instagram{
+        width: 40px;
+        height: 40px;
+        right: 50px;
+        bottom: 170px;
+    }
+    .mobile_footer_email{
+        right: 50px;
+        bottom: 120px;
+        font-size: 20px;
+    }
+    .mobile_footer_privacy_policy{
+        bottom: 18px;
+    }
+}
+@media screen and (max-width: 600px){
+    .mobile_footer_bottom_footer{
+        height: 200px;
+    }
+    .mobile_footer_logo{
+        width: 55px;
+        height: auto;
+        left: 40px;
+        bottom: 130px;
+    }
+    .mobile_footer_company_name{
+        left: 105px;
+        bottom: 145px;
+        font-size: 24px;
+    }
+    .mobile_footer_social_media_linkedin{
+        width: 35px;
+        height: 35px;
+        right: 100px;
+        bottom: 140px;
+    }
+    .mobile_footer_social_media_instagram{
+        width: 35px;
+        height: 35px;
+        right: 40px;
+        bottom: 140px;
+    }
+    .mobile_footer_email{
+        right: 40px;
+        width: fit-content;
+        bottom: 90px;
+        font-size: 18px;
+    }
+    .mobile_footer_privacy_policy{
+        bottom: 0px;
+    }
+}
+@media screen and (max-width: 500px){
+    .mobile_footer_bottom_footer{
+        height: 200px;
+    }
+    .mobile_footer_logo{
+        width: 40px;
+        height: auto;
+        left: 30px;
+        bottom: 130px;
+    }
+    .mobile_footer_company_name{
+        left: 78px;
+        bottom: 137px;
+        font-size: 20px;
+    }
+    .mobile_footer_social_media_linkedin{
+        width: 30px;
+        height: 30px;
+        right: 80px;
+        bottom: 135px;
+    }
+    .mobile_footer_social_media_instagram{
+        width: 30px;
+        height: 30px;
+        right: 30px;
+        bottom: 135px;
+    }
+    .mobile_footer_email{
+        right: 30px;
+        width: fit-content;
+        bottom: 90px;
+        font-size: 17px;
+    }
+    .mobile_footer_privacy_policy{
+        bottom: -10px;
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 430px){
+    .mobile_footer_bottom_footer{
+        height: 200px;
+    }
+    .mobile_footer_logo{
+        width: 40px;
+        height: auto;
+        left: calc(50% - 40px/2 - 50px);
+        bottom: 130px;
+    }
+    .mobile_footer_company_name{
+        left: calc(50% - 40px/2 - 5px);
+        bottom: 137px;
+        font-size: 20px;
+    }
+    .mobile_footer_social_media_linkedin{
+        width: 30px;
+        height: 30px;
+        right: calc(50% - 30px/2 + 30px);
+        bottom: 85px;
+    }
+    .mobile_footer_social_media_instagram{
+        width: 30px;
+        height: 30px;
+        right: calc(50% - 30px/2 - 30px);
+        bottom: 85px;
+    }
+    .mobile_footer_email{
+        right: calc(50% - 214px/2);
+        width: 214px;
+        bottom: 45px;
+        font-size: 17px;
+    }
+    .mobile_footer_privacy_policy{
+        bottom: -10px;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 350px){
+    .mobile_footer_privacy_policy{
+        bottom: -10px;
+        font-size: 11px;
+    }
+}

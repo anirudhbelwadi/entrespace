@@ -79,3 +79,50 @@ $('.get_started_cross_two').on('click', () => {
     $('.get_started_investor_button').hide();
     $('.get_started_entrepreneur_button').hide();
 });
+
+
+// Entrepreneur dropdown selection
+const $submit_button = $('#entrepreneur_submit_form');
+const $form_div = $('.entrepreneur_form');
+$("#idea").hide();
+$("#idea_label").hide();
+$("#company_name_label").hide();
+$("#company_name").hide();
+$("#company_url_label").hide();
+$("#company_url").hide();
+$("#company_description_label").hide();
+$("#company_description").hide();
+$("#stage").change(function(){
+    stageChange($(this).val());
+});
+
+function stageChange(stateValue){
+    if(stateValue=="ideation"){
+        $("#idea").show();
+        $("#idea_label").show();
+        $("#company_name_label").hide();
+        $("#company_name").hide();
+        $("#company_url_label").hide();
+        $("#company_url").hide();
+        $("#company_description_label").hide();
+        $("#company_description").hide();
+        $submit_button.removeClass('entrepreneur_submit_form_existing');
+        $submit_button.addClass('entrepreneur_submit_form_ideation');
+        $form_div.addClass('entrepreneur_form_ideation');
+        $form_div.removeClass('entrepreneur_form_existing');
+    }
+    else{
+        $("#idea").hide();
+        $("#idea_label").hide();
+        $("#company_name_label").show();
+        $("#company_name").show();
+        $("#company_url_label").show();
+        $("#company_url").show();
+        $("#company_description_label").show();
+        $("#company_description").show();
+        $submit_button.addClass('entrepreneur_submit_form_existing');
+        $submit_button.removeClass('entrepreneur_submit_form_ideation');
+        $form_div.removeClass('entrepreneur_form_ideation');
+        $form_div.addClass('entrepreneur_form_existing');
+    }
+}
