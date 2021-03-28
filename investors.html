@@ -46,20 +46,20 @@
     <a href="./entrepreneur.html" class="get_started_entrepreneur_button">Entrepreneur</a>
     <main class="investor_form">
         <h2 class="investor_title">Investor</h2>
-        <form action="" autocomplete="off">
+        <form action="" autocomplete="off" name="investors_form" method="POST" id="investors_form">
             <label class="investor_name_label" for="name">Name</label>
-            <input class="investor_name_input" type="text" name="name" id="name" />
+            <input class="investor_name_input" type="text" name="name" id="name" required />
             <label class="investor_email_label" for="email">Email</label>
-            <input class="investor_email_input" type="email" name="email" id="email" />
+            <input class="investor_email_input" type="email" name="email" id="email" required />
             <label class="investor_phone_label" for="phone">Contact Number</label>
-            <input class="investor_phone_input" type="text" name="phone" id="phone" />
+            <input class="investor_phone_input" type="text" name="phone" id="phone" required />
             <label class="investor_occupation_label" for="occupation">Occupation</label>
-            <input class="investor_occupation_input" type="text" name="occupation" id="occupation" />
+            <input class="investor_occupation_input" type="text" name="occupation" id="occupation" required />
             <label class="investor_amount_label" for="amount">Amount you are willing to invest</label>
-            <input class="investor_amount_input" type="number" min="1" name="amount" id="amount" />
+            <input class="investor_amount_input" type="number" min="1" name="amount" id="amount" required />
             <label class="investor_category_label" for="category">Any Specific category you want to invest</label>
-            <input class="investor_category_input" type="text" name="category" id="category" />
-            <button id="investor_submit_form" class="investor_submit_form">Submit</button>
+            <input class="investor_category_input" type="text" name="category" id="category" required />
+            <button id="investor_submit_form" class="investor_submit_form" type="submit">Submit</button>
         </form>
     </main>
     <footer class="footer">
@@ -84,40 +84,15 @@
         <a href="mailto:connect@entrespace.in" class="mobile_footer_email">Email- connect@entrespace.in</a>
         <p class="mobile_footer_privacy_policy">© EntreSpace 2021 All rights reserved. Privacy Policy</p>
     </footer>
-    <!--<h1 class="text-center">Investor</h1>
-    <form class="container w-50" name="investorForm" method="post">
-        <label for="name" class="h4">Name&nbsp;<span style="color: red;">*</span></label>
-        <input type="text" class="form-control" name="name" id="name" placeholder="Enter name" required>
-        <br>
-        <label for="email" class="h4">Email&nbsp;<span style="color: red;">*</span></label>
-        <input type="email" class="form-control" name="email" id="email" placeholder="Enter email" required>
-        <br>
-        <label for="phone" class="h4">Phone No.&nbsp;<span style="color: red;">*</span></label>
-        <input type="text" class="form-control" name="phone" id="phone" placeholder="Enter phone number" required>
-        <br>
-        <label for="occupation" class="h4">Occupation&nbsp;<span style="color: red;">*</span></label>
-        <input type="text" class="form-control" name="occupation" id="occupation" placeholder="Enter occupation"
-            required>
-        <br>
-        <label for="amount" class="h4">Amount you are willing to invest&nbsp;<span style="color: red;">*</span></label>
-        <input type="number" min="1" class="form-control" name="amount" id="amount" placeholder="Enter amount" required>
-        <br>
-        <label for="cetegory" class="h4">Any specific category you want to invest in?</label>
-        <input type="text" class="form-control" name="category" id="category" placeholder="Enter category">
-        <br>-->
-    <!--<label for="cv" class="h4" class="form-label">Upload your CV&nbsp;<span style="color: red;">*</span></label>
-        <input class="form-control" type="file" id="cv" name="cv" required>-->
-    <!--<button type="submit" class="btn btn-primary">Submit</button>
-    </form>-->
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbxfNWIqwNpI0OAe4i_0CPleybdfatMVXc2ixLyKW6uTr89dnqBVnE5kng/exec'
-        const form = document.forms['investorForm']
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzyl5dblzp_HshbulITZI2d1RwgQVnz4oVeoS2bJwuRHI6YZmsndG_-mYDwU8Nf8V7MHA/exec'
+        const form = document.forms['investors_form']
         form.addEventListener('submit', e => {
             e.preventDefault()
             fetch(scriptURL, { method: 'POST', body: new FormData(form) })
                 .then(response => alert("Thank you for showing your interest in investing! You will be contacted soon by our team."))
                 .catch(error => console.error(error.message))
-            document.getElementById("investorForm").reset();
+            document.getElementById("investors_form").reset();
         });
     </script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
