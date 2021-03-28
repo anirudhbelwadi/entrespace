@@ -46,17 +46,17 @@
     <a href="./entrepreneur.html" class="get_started_entrepreneur_button">Entrepreneur</a>
     <main class="entrepreneur_form">
         <h2 class="entrepreneur_title">Entrepreneur</h2>
-        <form action="" autocomplete="off">
+        <form action="" autocomplete="off" id="entrepreneurs_form" name="entrepreneurs_form">
             <label class="entrepreneur_name_label" for="name">Name</label>
-            <input class="entrepreneur_name_input" type="text" name="name" id="name" />
+            <input class="entrepreneur_name_input" type="text" name="name" id="name" required />
             <label class="entrepreneur_email_label" for="email">Email</label>
-            <input class="entrepreneur_email_input" type="email" name="email" id="email" />
+            <input class="entrepreneur_email_input" type="email" name="email" id="email" required />
             <label class="entrepreneur_phone_label" for="phone">Contact Number</label>
-            <input class="entrepreneur_phone_input" type="text" name="phone" id="phone" />
+            <input class="entrepreneur_phone_input" type="text" name="phone" id="phone" required />
             <label class="entrepreneur_address_label" for="address">Address</label>
-            <textarea class="entrepreneur_address_input" name="address" id="address"></textarea>
+            <textarea class="entrepreneur_address_input" name="address" id="address" required></textarea>
             <label class="entrepreneur_stage_label" for="stage">At which stage is your business?</label>
-            <select class="entrepreneur_stage_input" name="stage" id="stage">
+            <select class="entrepreneur_stage_input" name="stage" id="stage" required>
                 <option selected disabled>Select a stage</option>
                 <option value="ideation">Ideation</option>
                 <option value="existing">Existing</option>
@@ -64,19 +64,19 @@
             <!-- Ideation -->
             <label class="entrepreneur_idea_label" for="idea" id="idea_label">Describe your idea/product & what it will
                 do.</label>
-            <textarea class="entrepreneur_idea_input" name="idea" id="idea"></textarea>
+            <textarea class="entrepreneur_idea_input" name="idea" id="idea" required></textarea>
             <!-- Exiting -->
             <label class="entrepreneur_company_name_label" for="company_name" id="company_name_label">Company
                 Name</label>
-            <input class="entrepreneur_company_name_input" type="text" name="company_name" id="company_name" />
+            <input class="entrepreneur_company_name_input" type="text" name="company_name" id="company_name" required />
             <label class="entrepreneur_company_url_label" for="company_url" id="company_url_label">Company
                 website/Social Media URL</label>
-            <input class="entrepreneur_company_url_input" type="text" name="company_url" id="company_url" />
+            <input class="entrepreneur_company_url_input" type="text" name="company_url" id="company_url" required />
             <label class="entrepreneur_company_description_label" for="company_description"
                 id="company_description_label">Company Description</label>
             <textarea class="entrepreneur_company_description_input" name="company_description"
-                id="company_description"></textarea>
-            <button id="entrepreneur_submit_form" class="entrepreneur_submit_form">Submit</button>
+                id="company_description" required></textarea>
+            <button id="entrepreneur_submit_form" class="entrepreneur_submit_form" type="submit">Submit</button>
         </form>
     </main>
     <footer class="footer">
@@ -101,51 +101,15 @@
         <a href="mailto:connect@entrespace.in" class="mobile_footer_email">Email- connect@entrespace.in</a>
         <p class="mobile_footer_privacy_policy">© EntreSpace 2021 All rights reserved. Privacy Policy</p>
     </footer>
-    <!--<h1 class="text-center">Careers</h1>
-    <form class="container w-50" name="careerForm" method="post">
-        <label for="name" class="h4">Name&nbsp;<span style="color: red;">*</span></label>
-        <input type="text" class="form-control" name="name" id="name" placeholder="Enter name" required>
-        <br>
-        <label for="email" class="h4">Email&nbsp;<span style="color: red;">*</span></label>
-        <input type="email" class="form-control" name="email" id="email" placeholder="Enter email" required>
-        <br>
-        <label for="phone" class="h4">Phone No.&nbsp;<span style="color: red;">*</span></label>
-        <input type="text" class="form-control" name="phone" id="phone" placeholder="Enter phone number" required>
-        <br>
-        <label for="role" class="h4">Role:&nbsp;<span style="color: red;">*</span></label>
-        <select class="form-select" name="role" id="role" required>
-            <option class="form-control" value="default" selected disabled>Role</option>
-            <option class="form-control" value="consultancy">Consultancy</option>
-            <option class="form-control" value="marketing">Marketing</option>
-            <option class="form-control" value="legal">Legal</option>
-            <option class="form-control" value="technical support">Technical Support</option>
-            <option class="form-control" value="graphics">Graphics</option>
-            <option class="form-control" value="financial">Financial</option>
-        </select>
-        <br>
-        <label for="tenure" class="h4">Applying as:&nbsp;<span style="color: red;">*</span></label>
-        <select class="form-select" name="tenure" id="tenure" required>
-            <option class="form-control" value="default" selected disabled>Applying as</option>
-            <option class="form-control" value="Full Time">Full Time</option>
-            <option class="form-control" value="Part Time">Part Time</option>
-            <option class="form-control" value="Internship">Internship</option>
-            <option class="form-control" value="Live Project">Live Project</option>
-        </select>
-        <br>-->
-    <!--<label for="cv" class="h4" class="form-label">Upload your CV&nbsp;<span style="color: red;">*</span></label>
-        <input class="form-control" type="file" id="cv" name="cv" required>-->
-    <!--<br>
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </form>-->
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbz7WTO0A730agPKjCPMGcjVUqz4KJYMyJWXotdaMM_bwGrLEE22a46P5A/exec'
-        const form = document.forms['careerForm']
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxl5-qqlq2W0Z0SZkdd-iq-TcIYFDO-8xM13YtEzjEFg3oaBaZ6_wSHGzae_b1kKbvA/exec'
+        const form = document.forms['entrepreneurs_form']
         form.addEventListener('submit', e => {
             e.preventDefault()
             fetch(scriptURL, { method: 'POST', body: new FormData(form) })
                 .then(response => alert("Thank you for showing your interest in working with us! You will be contacted soon by our team."))
                 .catch(error => console.error(error.message))
-            document.getElementById("careerForm").reset();
+            document.getElementById("entrepreneurs_form").reset();
         });
     </script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>

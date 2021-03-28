@@ -98,28 +98,36 @@ $("#stage").change(function () {
 
 function stageChange(stateValue) {
     if (stateValue == "ideation") {
-        $("#idea").show();
         $("#idea_label").show();
+        $("#idea").show();
+        $("#idea").prop('required',true);
         $("#company_name_label").hide();
         $("#company_name").hide();
+        $('#company_name').removeAttr('required');
         $("#company_url_label").hide();
         $("#company_url").hide();
+        $('#company_url').removeAttr('required');
         $("#company_description_label").hide();
         $("#company_description").hide();
+        $('#company_description').removeAttr('required');
         $submit_button.removeClass('entrepreneur_submit_form_existing');
         $submit_button.addClass('entrepreneur_submit_form_ideation');
         $form_div.addClass('entrepreneur_form_ideation');
         $form_div.removeClass('entrepreneur_form_existing');
     }
     else {
-        $("#idea").hide();
         $("#idea_label").hide();
+        $("#idea").hide();
+        $('#idea').removeAttr('required');
         $("#company_name_label").show();
         $("#company_name").show();
+        $("#company_name").prop('required',true);
         $("#company_url_label").show();
         $("#company_url").show();
+        $("#company_url").prop('required',true);
         $("#company_description_label").show();
         $("#company_description").show();
+        $("#company_description").prop('required',true);
         $submit_button.addClass('entrepreneur_submit_form_existing');
         $submit_button.removeClass('entrepreneur_submit_form_ideation');
         $form_div.removeClass('entrepreneur_form_ideation');
