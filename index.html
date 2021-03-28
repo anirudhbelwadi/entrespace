@@ -119,14 +119,14 @@
         <img src="./assets/img/contact/mail.png" class="contact_mail_icon" alt="">
         <a class="contact_mail" href="mailto:connect@entrespace.in">Email- connect@entrespace.in</a>
         <p class="contact_text">Send us your queries through email.<br>We will approach you as soon as possible.</p>
-        <form id="contact_form" name="contact_form" autocomplete="off">
+        <form id="contact_form" name="contact_form" autocomplete="off" method="POST">
             <label class="contact_name_label" for="name">Name</label>
-            <input class="contact_name_input" type="text" name="name" id="name" />
+            <input class="contact_name_input" type="text" name="name" id="name" required />
             <label class="contact_email_label" for="email">Email</label>
-            <input class="contact_email_input" type="email" name="email" id="email" />
+            <input class="contact_email_input" type="email" name="email" id="email" required />
             <label class="contact_message_label" for="message">Message</label>
-            <textarea class="contact_message_input" name="message" id="message"></textarea>
-            <button class="contact_submit_form">Submit</button>
+            <textarea class="contact_message_input" name="message" id="message" required></textarea>
+            <button class="contact_submit_form" type="submit">Submit</button>
         </form>
         <h2 class="contact_clients">Our Clients</h2>
         <div class="contact_clients_circle">25+</div>
@@ -138,19 +138,19 @@
         <div class="contact_social_media_circle">10k+</div>
     </section>
     <footer class="footer">
-        <div class="footer_small_circle_ornage"></div>\
+        <div class="footer_small_circle_ornage"></div>
         <h2 class="footer_get_in_touch">Get in Touch</h2>
         <img src="./assets/img/contact/mail.png" class="footer_mail_icon" alt="">
         <a class="footer_mail" href="mailto:connect@entrespace.in">Email- connect@entrespace.in</a>
         <p class="footer_text">Send us your queries through email.<br>We will approach you as soon as possible.</p>
-        <form id="footer_form" name="footer_form" autocomplete="off">
+        <form id="footer_form" name="footer_form" autocomplete="off" method="POST">
             <label class="footer_name_label" for="name">Name</label>
-            <input class="footer_name_input" type="text" name="name" id="name" />
+            <input class="footer_name_input" type="text" name="name" id="name" required />
             <label class="footer_email_label" for="email">Email</label>
-            <input class="footer_email_input" type="email" name="email" id="email" />
+            <input class="footer_email_input" type="email" name="email" id="email" required />
             <label class="footer_message_label" for="message">Message</label>
-            <textarea class="footer_message_input" name="message" id="message"></textarea>
-            <button class="footer_submit_form">Submit</button>
+            <textarea class="footer_message_input" name="message" id="message" required></textarea>
+            <button class="footer_submit_form" type="submit">Submit</button>
         </form>
         <div class="footer_bottom_footer"></div>
         <img src="./assets/img/logo/logo.png" class="footer_logo" alt="">
@@ -173,6 +173,25 @@
         <a href="mailto:connect@entrespace.in" class="mobile_footer_email">Email- connect@entrespace.in</a>
         <p class="mobile_footer_privacy_policy">© EntreSpace 2021 All rights reserved. Privacy Policy</p>
     </footer>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwwr6qINesSS0LedVWJCTaVS-f4FQ5rGTXtJDXbOS5OrNh7Dq9PS2L6gqZH5rgGSSYz/exec'
+        const contactForm = document.forms['contact_form']
+        contactForm.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(contactForm) })
+                .then(response => alert("Your query has been recorded! You will be contacted soon by our team."))
+                .catch(error => console.error(error.message))
+            document.getElementById("contact_form").reset();
+        });
+        const footerForm = document.forms['footer_form']
+        footerForm.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(footerForm) })
+                .then(response => alert("Your query has been recorded! You will be contacted soon by our team."))
+                .catch(error => console.error(error.message))
+            document.getElementById("footer_form").reset();
+        });
+    </script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script language="JavaScript" type="text/javascript" src="./assets/script/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
