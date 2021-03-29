@@ -145,14 +145,14 @@
 }
 .get_started_cross_one_hover{
     width: 40px;
-    border: 2px solid #0b4874;
+    border: 2px solid #F36E33;
     cursor: pointer;
     right: 20px;
     transition: 0.2s;
 }
 .get_started_cross_two_hover{
     width: 40px;
-    border: 2px solid #0b4874;
+    border: 2px solid #F36E33;
     cursor: pointer;
     right: 20px;
     transition: 0.2s;
