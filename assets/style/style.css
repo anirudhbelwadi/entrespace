@@ -333,6 +333,11 @@
     line-height: 23px;
     color: #2A3990;
 }
+.main_get_started:hover{
+    background: #F36E33;
+    color: #FFFFFF;
+    transition: 0.4s;
+}
 .main_logo{
     position: absolute;
     width: 278.13px;
