@@ -741,6 +741,13 @@
     color: #000000;
     display: none;
 }
+.footer_social_media_facebook{
+    position: absolute;
+    width: 49px;
+    height: 49px;
+    right: 289px;
+    bottom: 289px;
+}
 .footer_social_media_linkedin{
     position: absolute;
     width: 49px;
@@ -794,9 +801,6 @@
     }
 }
 @media screen and (max-width: 932px){
-    .footer{
-        display: none;
-    }
     .footer_get_in_touch{
         display: inherit;
     }
@@ -846,6 +850,9 @@
         display: none;
     }
     .footer_copyright2{
+        display: none;
+    }
+    .footer_social_media_facebook{
         display: none;
     }
     .footer_social_media_linkedin{
@@ -1261,6 +1268,13 @@
         color: #000000;
         display: none;
     }
+    .mobile_footer_social_media_facebook{
+        position: absolute;
+        width: 49px;
+        height: 49px;
+        right: 289px;
+        bottom: 289px;
+    }
     .mobile_footer_social_media_linkedin{
         position: absolute;
         width: 49px;
@@ -1326,6 +1340,12 @@
     .mobile_footer_copyright2{
         display: none;
     }
+    .mobile_footer_social_media_facebook{
+        width: 40px;
+        height: 40px;
+        right: 225px;
+        bottom: 215px;
+    }
     .mobile_footer_social_media_linkedin{
         width: 40px;
         height: 40px;
@@ -1364,6 +1384,12 @@
         bottom: 178px;
         font-size: 27px;
     }
+    .mobile_footer_social_media_facebook{
+        width: 40px;
+        height: 40px;
+        right: 190px;
+        bottom: 170px;
+    }
     .mobile_footer_social_media_linkedin{
         width: 40px;
         height: 40px;
@@ -1399,6 +1425,12 @@
         left: 105px;
         bottom: 145px;
         font-size: 24px;
+    }
+    .mobile_footer_social_media_facebook{
+        width: 35px;
+        height: 35px;
+        right: 160px;
+        bottom: 140px;
     }
     .mobile_footer_social_media_linkedin{
         width: 35px;
@@ -1436,6 +1468,12 @@
         left: 78px;
         bottom: 137px;
         font-size: 20px;
+    }
+    .mobile_footer_social_media_facebook{
+        width: 30px;
+        height: 30px;
+        right: 130px;
+        bottom: 135px;
     }
     .mobile_footer_social_media_linkedin{
         width: 30px;
@@ -1475,16 +1513,22 @@
         bottom: 137px;
         font-size: 20px;
     }
+    .mobile_footer_social_media_facebook{
+        width: 30px;
+        height: 30px;
+        right: calc(50% - 30px/2 + 60px);
+        bottom: 85px;
+    }
     .mobile_footer_social_media_linkedin{
         width: 30px;
         height: 30px;
-        right: calc(50% - 30px/2 + 30px);
+        right: calc(50% - 30px/2);
         bottom: 85px;
     }
     .mobile_footer_social_media_instagram{
         width: 30px;
         height: 30px;
-        right: calc(50% - 30px/2 - 30px);
+        right: calc(50% - 30px/2 - 60px);
         bottom: 85px;
     }
     .mobile_footer_email{
