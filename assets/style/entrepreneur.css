@@ -215,14 +215,14 @@
     display: none;
 }
 .get_started_investor_button:hover{
-    background: #104266;
-    color: #F36E33;
-    transition: 0.2s;
+    background: #F36E33;
+    color: #FFFFFF;
+    transition: 0.4s;
 }
 .get_started_entrepreneur_button:hover{
-    background: #104266;
-    color: #F36E33;
-    transition: 0.2s;
+    background: #F36E33;
+    color: #FFFFFF;
+    transition: 0.4s;
 }
 @media screen and (max-width: 840px){
     .get_started_title{
