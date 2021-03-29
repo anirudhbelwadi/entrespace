@@ -79,3 +79,16 @@ $('.get_started_cross_two').on('click', () => {
     $('.get_started_investor_button').hide();
     $('.get_started_entrepreneur_button').hide();
 });
+
+$(document).on('keydown', function (event) {
+    if (event.key == "Escape") {
+        $('.get_started_background').hide();
+        $('.get_started_cross_one').hide();
+        $('.get_started_cross_two').hide();
+        $('.get_started_cross_one_hover').hide();
+        $('.get_started_cross_two_hover').hide();
+        $('.get_started_title').hide();
+        $('.get_started_investor_button').hide();
+        $('.get_started_entrepreneur_button').hide();
+    }
+});
