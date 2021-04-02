@@ -70,6 +70,39 @@
                 do.</label>
             <textarea class="entrepreneur_idea_input" name="idea" id="idea" required
                 placeholder="Enter idea"></textarea>
+
+            <label class="entrepreneur_service_ideation_label" for="service" id="entrepreneur_service_label">Service(s)
+                you are looking
+                for</label>
+
+            <label for="consultancy" class="entrepreneur_service_ideation_consultancy_label"
+                id="entrepreneur_service_ideation_consultancy_label">Consultancy</label>
+            <input type="checkbox" id="consultancy" name="consultancy" value="yes"
+                class="entrepreneur_service_ideation_consultancy">
+
+            <label for="marketing" class="entrepreneur_service_ideation_marketing_label"
+                id="entrepreneur_service_ideation_marketing_label">Marketing</label>
+            <input type="checkbox" id="marketing" name="marketing" value="yes"
+                class="entrepreneur_service_ideation_marketing">
+
+            <label for="legal" class="entrepreneur_service_ideation_legal_label"
+                id="entrepreneur_service_ideation_legal_label">Legal</label>
+            <input type="checkbox" id="legal" name="legal" value="yes" class="entrepreneur_service_ideation_legal">
+
+            <label for="technical_support" class="entrepreneur_service_ideation_tech_label"
+                id="entrepreneur_service_ideation_tech_label">Technical Support</label>
+            <input type="checkbox" id="technical_support" name="technical_support" value="yes"
+                class="entrepreneur_service_ideation_tech">
+
+            <label for="graphics" class="entrepreneur_service_ideation_graphics_label"
+                id="entrepreneur_service_ideation_graphics_label">Graphics</label>
+            <input type="checkbox" id="graphics" name="graphics" value="yes"
+                class="entrepreneur_service_ideation_graphics">
+
+            <label for="investment" class="entrepreneur_service_ideation_investment_label"
+                id="entrepreneur_service_ideation_investment_label">Investment</label>
+            <input type="checkbox" id="investment" name="investment" value="yes"
+                class="entrepreneur_service_ideation_investment">
             <!-- Exiting -->
             <label class="entrepreneur_company_name_label" for="company_name" id="company_name_label">Company
                 Name</label>
@@ -126,7 +159,7 @@
         form.addEventListener('submit', e => {
             e.preventDefault()
             fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => alert("Thank you for showing your interest in working with us! You will be contacted soon by our team."))
+                .then(response => alert("Thank you for showing your interest! You will be contacted soon by our team."))
                 .catch(error => console.error(error.message))
             document.getElementById("entrepreneurs_form").reset();
         });

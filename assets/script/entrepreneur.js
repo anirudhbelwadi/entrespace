@@ -96,8 +96,35 @@ $(document).on('keydown', function (event) {
 // Entrepreneur dropdown selection
 const $submit_button = $('#entrepreneur_submit_form');
 const $form_div = $('.entrepreneur_form');
+const $entrepreneur_service_label = $('#entrepreneur_service_label');
+const $entrepreneur_service_ideation_consultancy_label = $('#entrepreneur_service_ideation_consultancy_label')
+const $consultancy = $('#consultancy')
+const $entrepreneur_service_ideation_marketing_label = $('#entrepreneur_service_ideation_marketing_label')
+const $marketing = $('#marketing')
+const $entrepreneur_service_ideation_legal_label = $('#entrepreneur_service_ideation_legal_label')
+const $legal = $('#legal')
+const $entrepreneur_service_ideation_tech_label = $('#entrepreneur_service_ideation_tech_label')
+const $technical_support = $('#technical_support')
+const $entrepreneur_service_ideation_graphics_label = $('#entrepreneur_service_ideation_graphics_label')
+const $graphics = $('#graphics')
+const $entrepreneur_service_ideation_investment_label = $('#entrepreneur_service_ideation_investment_label')
+const $investment = $('#investment')
+
 $("#idea").hide();
 $("#idea_label").hide();
+$entrepreneur_service_label.hide();
+$entrepreneur_service_ideation_consultancy_label.hide();
+$consultancy.hide();
+$entrepreneur_service_ideation_marketing_label.hide();
+$marketing.hide();
+$entrepreneur_service_ideation_legal_label.hide();
+$legal.hide();
+$entrepreneur_service_ideation_tech_label.hide();
+$technical_support.hide();
+$entrepreneur_service_ideation_graphics_label.hide();
+$graphics.hide();
+$entrepreneur_service_ideation_investment_label.hide();
+$investment.hide();
 $("#company_name_label").hide();
 $("#company_name").hide();
 $("#company_url_label").hide();
@@ -112,7 +139,48 @@ function stageChange(stateValue) {
     if (stateValue == "ideation") {
         $("#idea_label").show();
         $("#idea").show();
-        $("#idea").prop('required',true);
+
+        $entrepreneur_service_label.show();
+        $entrepreneur_service_label.addClass('entrepreneur_service_ideation_label');
+        $entrepreneur_service_label.removeClass('entrepreneur_service_existing_label');
+        $entrepreneur_service_ideation_consultancy_label.show();
+        $entrepreneur_service_ideation_consultancy_label.addClass('entrepreneur_service_ideation_consultancy_label');
+        $entrepreneur_service_ideation_consultancy_label.removeClass('entrepreneur_service_existing_consultancy_label');
+        $consultancy.show();
+        $consultancy.addClass('entrepreneur_service_ideation_consultancy');
+        $consultancy.removeClass('entrepreneur_service_existing_consultancy');
+        $entrepreneur_service_ideation_marketing_label.show();
+        $entrepreneur_service_ideation_marketing_label.addClass('entrepreneur_service_ideation_marketing_label');
+        $entrepreneur_service_ideation_marketing_label.removeClass('entrepreneur_service_existing_marketing_label');
+        $marketing.show();
+        $marketing.addClass('entrepreneur_service_ideation_marketing');
+        $marketing.removeClass('entrepreneur_service_existing_marketing');
+        $entrepreneur_service_ideation_legal_label.show();
+        $entrepreneur_service_ideation_legal_label.addClass('entrepreneur_service_ideation_legal_label');
+        $entrepreneur_service_ideation_legal_label.removeClass('entrepreneur_service_existing_legal_label');
+        $legal.show();
+        $legal.addClass('entrepreneur_service_ideation_legal');
+        $legal.removeClass('entrepreneur_service_existing_legal');
+        $entrepreneur_service_ideation_tech_label.show();
+        $entrepreneur_service_ideation_tech_label.addClass('entrepreneur_service_ideation_tech_label');
+        $entrepreneur_service_ideation_tech_label.removeClass('entrepreneur_service_existing_tech_label');
+        $technical_support.show();
+        $technical_support.addClass('entrepreneur_service_ideation_tech');
+        $technical_support.removeClass('entrepreneur_service_existing_tech');
+        $entrepreneur_service_ideation_graphics_label.show();
+        $entrepreneur_service_ideation_graphics_label.addClass('entrepreneur_service_ideation_graphics_label');
+        $entrepreneur_service_ideation_graphics_label.removeClass('entrepreneur_service_existing_graphics_label');
+        $graphics.show();
+        $graphics.addClass('entrepreneur_service_ideation_graphics');
+        $graphics.removeClass('entrepreneur_service_existing_graphics');
+        $entrepreneur_service_ideation_investment_label.show();
+        $entrepreneur_service_ideation_investment_label.addClass('entrepreneur_service_ideation_investment_label');
+        $entrepreneur_service_ideation_investment_label.removeClass('entrepreneur_service_existing_investment_label');
+        $investment.show();
+        $investment.addClass('entrepreneur_service_ideation_investment');
+        $investment.removeClass('entrepreneur_service_existing_investment');
+
+        $("#idea").prop('required', true);
         $("#company_name_label").hide();
         $("#company_name").hide();
         $('#company_name').removeAttr('required');
@@ -131,15 +199,56 @@ function stageChange(stateValue) {
         $("#idea_label").hide();
         $("#idea").hide();
         $('#idea').removeAttr('required');
+
+        $entrepreneur_service_label.show();
+        $entrepreneur_service_label.removeClass('entrepreneur_service_ideation_label');
+        $entrepreneur_service_label.addClass('entrepreneur_service_existing_label');
+        $entrepreneur_service_ideation_consultancy_label.show();
+        $entrepreneur_service_ideation_consultancy_label.removeClass('entrepreneur_service_ideation_consultancy_label');
+        $entrepreneur_service_ideation_consultancy_label.addClass('entrepreneur_service_existing_consultancy_label');
+        $consultancy.show();
+        $consultancy.removeClass('entrepreneur_service_ideation_consultancy');
+        $consultancy.addClass('entrepreneur_service_existing_consultancy');
+        $entrepreneur_service_ideation_marketing_label.show();
+        $entrepreneur_service_ideation_marketing_label.removeClass('entrepreneur_service_ideation_marketing_label');
+        $entrepreneur_service_ideation_marketing_label.addClass('entrepreneur_service_existing_marketing_label');
+        $marketing.show();
+        $marketing.removeClass('entrepreneur_service_ideation_marketing');
+        $marketing.addClass('entrepreneur_service_existing_marketing');
+        $entrepreneur_service_ideation_legal_label.show();
+        $entrepreneur_service_ideation_legal_label.removeClass('entrepreneur_service_ideation_legal_label');
+        $entrepreneur_service_ideation_legal_label.addClass('entrepreneur_service_existing_legal_label');
+        $legal.show();
+        $legal.removeClass('entrepreneur_service_ideation_legal');
+        $legal.addClass('entrepreneur_service_existing_legal');
+        $entrepreneur_service_ideation_tech_label.show();
+        $entrepreneur_service_ideation_tech_label.removeClass('entrepreneur_service_ideation_tech_label');
+        $entrepreneur_service_ideation_tech_label.addClass('entrepreneur_service_existing_tech_label');
+        $technical_support.show();
+        $technical_support.removeClass('entrepreneur_service_ideation_tech');
+        $technical_support.addClass('entrepreneur_service_existing_tech');
+        $entrepreneur_service_ideation_graphics_label.show();
+        $entrepreneur_service_ideation_graphics_label.removeClass('entrepreneur_service_ideation_graphics_label');
+        $entrepreneur_service_ideation_graphics_label.addClass('entrepreneur_service_existing_graphics_label');
+        $graphics.show();
+        $graphics.removeClass('entrepreneur_service_ideation_graphics');
+        $graphics.addClass('entrepreneur_service_existing_graphics');
+        $entrepreneur_service_ideation_investment_label.show();
+        $entrepreneur_service_ideation_investment_label.removeClass('entrepreneur_service_ideation_investment_label');
+        $entrepreneur_service_ideation_investment_label.addClass('entrepreneur_service_existing_investment_label');
+        $investment.show();
+        $investment.removeClass('entrepreneur_service_ideation_investment');
+        $investment.addClass('entrepreneur_service_existing_investment');
+
         $("#company_name_label").show();
         $("#company_name").show();
-        $("#company_name").prop('required',true);
+        $("#company_name").prop('required', true);
         $("#company_url_label").show();
         $("#company_url").show();
-        $("#company_url").prop('required',true);
+        $("#company_url").prop('required', true);
         $("#company_description_label").show();
         $("#company_description").show();
-        $("#company_description").prop('required',true);
+        $("#company_description").prop('required', true);
         $submit_button.addClass('entrepreneur_submit_form_existing');
         $submit_button.removeClass('entrepreneur_submit_form_ideation');
         $form_div.removeClass('entrepreneur_form_ideation');
